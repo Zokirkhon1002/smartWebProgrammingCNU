@@ -8,7 +8,7 @@
 
 - email: <a href="mailto:zokirxonkotibxanov@gmail.com" style="text-decoration: none;">zokirxonkotibxanov@gmail.com</a>
 
-- phone number: <a href="tel:+821080891816" style="text-decoration: none;">01080891816</a>
+- phone number: <a href='tel:+8210 8089 1816' style="text-decoration: none;">010 8089 1816</a>
 
 - name of Teacher: 김해란 (KIM HAE RAN)
 
