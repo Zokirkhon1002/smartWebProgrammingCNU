@@ -1,4 +1,5 @@
 # SmartWebProgrammingCNU
+# you can see in here: <a href="https://smart-web-programming-cnu.netlify.app">Live Demo</a>
 ## Smart Web Programming lesson at CNU
 
 - name: Zokirkhon
