@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>All Lesson Links</title>
+  <style>
+    * {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  font-size: 16px;
+}
+li {
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+li:before {
+  content: ">>";
+}
+
+li:hover li:after {
+  content: ">>";
+}
+a {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.17s ease-in-out;
+}
+a:visited, a:focus {
+  color: #333;
+}
+  </style>
+</head>
+
+<body>
+  <h1>Smart Web Programming</h1>
+  <ol id="ol">
+    
+  </ol>
+  <script>
+    let allPaths = [
+  {
+    id: 001,
+    name: "lesson(2023.03.06)",
+    path: "./1-lesson/index.html"
+    // add more key and values soon
+  },
+  {
+    id: 002,
+    name: "lesson(2023.03.08)",
+    path: "./2-lesson/index.html"
+    // add more key and values soon
+  }
+];
+window.addEventListener("load",()=> {
+  let orderedElement = document.getElementById("ol");
+  let result = "";
+  allPaths.forEach((path)=> {
+    result+= `<li key="${path.id}">
+    <a href="/${path.path}" >${path.name}</a>
+  </li>`;
+  })
+  orderedElement.innerHTML = result;
+})
+  </script>
+</body>
+
+</html>
