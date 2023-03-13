@@ -6,26 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3-lesson</title>
     <style>
-        div {
+        div,p,h1,img {
             border: 1px solid #f00;
         }
-        h1 {
-            border: 1px solid #0a0;
-        }
-        span {
+        span,a {
             border: 1px solid #00f;
+        }
+        .next-lesson {
+            display: flex;
+            flex-direction: column;
+        }
+        .next-lesson a {
+            display: inline-block;
+            padding: 1rem;
+            color: #00f;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
     <h1>Block Elements and Inline Elements</h1>
-    <!-- div*5 => makes 5 div in each row
+    <!-- div*5 => makes 5 div for 5 each row
     <div></div>
     <div></div>
     <div></div>
     <div></div>
     <div></div> -->
-    <!-- div{블럭요소$}*5 => makes 5 div in each row with content -->
+    <!-- div{블럭요소$}*5 => makes 5 div for 5 each row with content -->
     <div>블럭요소1</div>
     <div>블럭요소2</div>
     <div>블럭요소3</div>
@@ -33,11 +40,25 @@
     <div>블럭요소5</div>
 
     <h1>블럭 요소 테스트</h1>
-    <!-- span{인라인$}*5 => makes 5 span in each row with content -->
+    <!-- span{인라인$}*5 => makes 5 span for 5 each row with content -->
     <span>인라인1</span>
     <span>인라인2</span>
     <span>인라인3</span>
     <span>인라인4</span>
     <span>인라인5</span>
+    <a href="https://www.google.com" target="_blank">Google Search</a>
+    <a href="https://www.naver.com" target="_blank">Naver Search</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic beatae doloremque, quasi animi fugit rerum harum voluptate, unde, maxime minus culpa alias ut officia possimus tempore mollitia natus dolores facere. Distinctio ad tempora obcaecati ratione assumenda optio eligendi quam eaque? Beatae, et. Cum incidunt, quam iste vero quisquam neque blanditiis?</p>
+
+    <div>
+        <h1>Block Elements and Inline Elements</h1>
+        <img src="./media/images/block.jpeg" alt="Block Elements">
+        <img src="./media/images/inline.jpeg" alt="Inline Elements">
+    </div>
+
+    <div class="next-lesson">
+        <a href="./h1_h6.html">h1 ~ h6 tags Click me to see:)</a>
+        <a href="./multi.html">Multimedia Click me to see:)</a>
+    </div>
 </body>
 </html>
