@@ -1,90 +1,102 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="All codes' live demos">
-  <meta name="keywords" content="HTML5, CSS3, JavaScript, cnu, CNU, Smart, Web, Programming, Yeosu">
-  <meta name="author" content="Zokirkhon">
-  <title>All Lesson Links</title>
-  <style>
-    * {
-  box-sizing: border-box;
-}
-html {
-  height: 100%;
-  width: 100%;
-  background: #fff;
-  font-size: 16px;
-}
-li {
-  line-height: 2.5rem;
-  font-size: 1.5rem;
-}
-a {
-  color: #333;
-  cursor: pointer;
-  transition: all 0.17s ease-in-out;
-}
-a:visited, a:focus {
-  color: #333;
-}
-    footer {
-      position: absolute;
-      bottom: 10px;
-      margin-left: auto; 
-      margin-right: auto; 
-      left: 0; 
-      right: 0; 
-      text-align: center;
-    }
-    footer > a {
-      text-align: center;
-      width: 100%;
-      text-decoration: underline;
-    }
-  </style>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="All codes' live demos" />
+    <meta
+      name="keywords"
+      content="HTML5, CSS3, JavaScript, cnu, CNU, Smart, Web, Programming, Yeosu"
+    />
+    <meta name="author" content="Zokirkhon" />
+    <title>All Lesson Links</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        font-size: 16px;
+      }
+      li {
+        line-height: 2.5rem;
+        font-size: 1.5rem;
+      }
+      a {
+        color: #333;
+        cursor: pointer;
+        transition: all 0.17s ease-in-out;
+      }
+      a:visited,
+      a:focus {
+        color: #333;
+      }
+      footer {
+        position: absolute;
+        bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+      footer > a {
+        text-align: center;
+        width: 100%;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
 
-<body>
-  <h1>Smart Web Programming</h1>
-  <ol id="ol">
-    
-  </ol>
+  <body>
+    <h1>Smart Web Programming</h1>
+    <ol id="ol"></ol>
 
-  <footer>
-    <a target="_blank" href="https://github.com/Zokirkhon1002/smartWebProgrammingCNU">
-      All Codes in GitHub
-    </a>
-  </footer>
-  <script>
-    let allPaths = [
-  {
-    id: 001,
-    name: "lesson(2023.03.06)",
-    path: "./1-lesson/index.html",
-    // add more key and values soon
-  },
-  {
-    id: 002,
-    name: "lesson(2023.03.08)",
-    path: "./2-lesson/index.html"
-    // add more key and values soon
-  }
-];
-    
-    
-window.addEventListener("load",()=> {
-  let orderedElement = document.getElementById("ol");
-  let result = "";
-  allPaths.forEach((path,idx)=> {
-    result+= `<li key="${path.id}">
-    <a title="${path.name}" target="_blank" href="/${path.path}" >${path.name}</a> <a target="_blank"  href="https://github.com/Zokirkhon1002/smartWebProgrammingCNU/tree/main/${path.path.split("/")[1]}" style="text-decoration:underline;" title="${path.name}'s code on github'">[<i>code${idx+1}</i>]</a>
+    <footer>
+      <a
+        target="_blank"
+        href="https://github.com/Zokirkhon1002/smartWebProgrammingCNU"
+      >
+        All Codes in GitHub
+      </a>
+    </footer>
+    <script>
+      let allPaths = [
+        {
+          id: 001,
+          name: "lesson(2023.03.06)",
+          path: "./1-lesson/index.html",
+        },
+        {
+          id: 002,
+          name: "lesson(2023.03.08)",
+          path: "./2-lesson/index.html",
+        },
+        {
+          id: 003,
+          name: "lesson(2023.03.13)",
+          path: "./3-lesson/index.html",
+        },
+      ];
+
+      window.addEventListener("load", () => {
+        let orderedElement = document.getElementById("ol");
+        let result = "";
+        allPaths.forEach((path, idx) => {
+          result += `<li key="${path.id}">
+    <a title="${path.name}" target="_blank" href="/${path.path}" >${
+            path.name
+          }</a> <a target="_blank"  href="https://github.com/Zokirkhon1002/smartWebProgrammingCNU/tree/main/${
+            path.path.split("/")[1]
+          }" style="text-decoration:underline;" title="${
+            path.name
+          }'s code on github'">[<i>code${idx + 1}</i>]</a>
   </li>`;
-  })
-  orderedElement.innerHTML = result;
-})
-  </script>
-</body>
-
+        });
+        orderedElement.innerHTML = result;
+      });
+    </script>
+  </body>
 </html>
