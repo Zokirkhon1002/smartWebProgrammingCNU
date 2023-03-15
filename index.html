@@ -84,6 +84,7 @@
           id: 004,
           name: "lesson(2023.03.15)",
           path: "./4-lesson/index.html",
+          homework: "./4-lesson/homework/index.html",
         },
       ];
 
@@ -99,6 +100,15 @@
           }" style="text-decoration:underline;" title="${
             path.name
           }'s code on github'">[<i>code${idx + 1}</i>]</a>
+          ${
+            path?.homework
+              ? `<br><ul><li><a href="/${
+                  path.homework
+                }">homework</a> [<a href="https://github.com/Zokirkhon1002/smartWebProgrammingCNU/tree/main/${
+                  path.homework.split("/")[1]
+                }" target="_blank">code</a>]</li></ul>`
+              : ""
+          }
   </li>`;
         });
         orderedElement.innerHTML = result;
