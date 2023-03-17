@@ -1,0 +1,11 @@
+a {
+  color: blue;
+}
+a::before {
+  content: "⬅️";
+}
+summary {
+  font-size: 2rem;
+  font-weight: bold;
+  user-select: none;
+}
