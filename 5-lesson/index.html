@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>5-lesson</title>
+    <meta name="author" content="Kotibkhonov" />
+    <meta name="author" content="Zokirkhon" />
+    <title>5-lesson Table</title>
     <style>
       .next-lesson {
         display: flex;
@@ -21,9 +23,125 @@
       a {
         border: 1px solid #00f;
       }
+      /* .container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        
+      } */
+
+      table {
+        border-collapse: collapse;
+        border: 1px solid #000;
+      }
+      tr,
+      td,
+      th {
+        border: 1px solid #000;
+        padding: 1rem;
+      }
+
+      tr:hover,
+      tr:nth-child(even):hover {
+        background: blueviolet;
+        color: #fff;
+        cursor: pointer;
+      }
+      tr:nth-child(even) {
+        background: #555;
+        color: #fff;
+      }
     </style>
   </head>
   <body>
-    <h1>5-lesson</h1>
+    <h1>5-lesson Table</h1>
+    <div class="container">
+      <!-- table>(thead>tr>th*3)+(tbody>tr>td*3)+(tfoot>tr>td*3) -->
+      <h3>84-page table.html example</h3>
+      <table>
+        <caption>
+          Table1. 성적처리
+        </caption>
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>주인공</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>홍길동전</td>
+            <td>홍길동</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>춘향전</td>
+            <td>성준향</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>3</td>
+            <td>심청전</td>
+            <td>심청</td>
+          </tr>
+        </tfoot>
+      </table>
+      <hr />
+      <hr />
+      <!-- table>caption+(colgroup>col*3)+(tr>th*3)+(tr>td*3) -->
+      <h3>88-page colgroup example</h3>
+      <table>
+        <caption>
+          표 제목 설정
+        </caption>
+        <colgroup>
+          <col style="background-color: yellow" />
+          <col style="background-color: #f00" />
+          <col style="background-color: #0f0" />
+        </colgroup>
+        <tr>
+          <th>번호</th>
+          <th>제목</th>
+          <th>주인공</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>홍길동전</td>
+          <td>홍길동</td>
+        </tr>
+      </table>
+
+      <hr />
+      <hr />
+      <table>
+        <tr>
+          <th>번호</th>
+          <th>상품</th>
+          <th>금액</th>
+        </tr>
+        <tr>
+          <td rowspan="2">1</td>
+          <td>water melon</td>
+          <td>10,000</td>
+        </tr>
+        <tr>
+          <td>apple</td>
+          <td>5,000</td>
+        </tr>
+        <tr>
+          <td colspan="2">합계</td>
+          <td>15,000</td>
+        </tr>
+      </table>
+    </div>
+    <div class="next-lesson">
+      <h1 style="border: none; text-align: center">New html Files</h1>
+      <a href="./fira.html">https://fira.or.kr/fira/fira_030601.jsp Click me to see:)</a>
+      <!-- <a href="./list.html">UL and OL Lists me to see:)</a>
+      <a href="./fromBook.html">UL and OL Lists from book me to see:)</a> -->
+    </div>
   </body>
 </html>
