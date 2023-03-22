@@ -23,17 +23,179 @@
       a {
         border: 1px solid #00f;
       }
+      p {
+        font-weight: bolder;
+      }
     </style>
   </head>
   <body>
-    <h1>6th lesson</h1>
-    <!-- <div class="next-lesson">
+    <!-- ul>(li>a[href=$])*3 -->
+
+    <h1>79-page ul2.html example</h1>
+    <ul>
+      <li>이것은 첫번째 목록입니다</li>
+      <li>
+        이것은 첫번째 목록입니다
+        <ul>
+          <li>이것은 두번째 목록입니다</li>
+          <li>
+            이것은 두번째 목록입니다
+            <ul>
+              <li>이것은 세번째 목록입니다</li>
+              <li>이것은 세번째 목록입니다</li>
+            </ul>
+          </li>
+          <li>이것은 두번째 목록입니다</li>
+        </ul>
+      </li>
+      <li>이것은 첫번째 목록입니다</li>
+    </ul>
+
+    <hr />
+    <hr />
+    <h1>79-page ul3.html example</h1>
+
+    <p>disc: 검정색 작은 원형 모양 (기본설정)</p>
+    <ul>
+      <li>HTML</li>
+      <li>Java</li>
+      <li>C++</li>
+    </ul>
+    <p>circle: 흰색 작은 원형 모양</p>
+    <ul style="list-style-type: circle">
+      <li>HTML</li>
+      <li>Java</li>
+      <li>C++</li>
+    </ul>
+    <p>square: 사강형 모양</p>
+    <ul style="list-style-type: square">
+      <li>HTML</li>
+      <li>Java</li>
+      <li>C++</li>
+    </ul>
+
+    <hr />
+    <hr />
+
+    <h1>80-page ol.html example</h1>
+    <p>기본 형식</p>
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+    <p>시작 번호 설정</p>
+    <ol start="10">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+    <p>내림차순 설정</p>
+    <ol reversed>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+    <hr />
+    <hr />
+
+    <h1>81-page ol2.html example</h1>
+    <ol>
+      <li>이것은 첫번째 목록입니다</li>
+      <li>
+        이것은 첫번째 목록입니다
+        <ol>
+          <li>이것은 두번째 목록입니다</li>
+          <li>
+            이것은 두번째 목록입니다
+            <ol>
+              <li>이것은 세번째 목록입니다</li>
+              <li>이것은 세번째 목록입니다</li>
+              <li>이것은 세번째 목록입니다</li>
+            </ol>
+          </li>
+          <li>이것은 두번째 목록입니다</li>
+        </ol>
+      </li>
+      <li>이것은 첫번째 목록입니다</li>
+    </ol>
+    <hr />
+    <hr />
+
+    <h1>82-page ol3.html example</h1>
+    <!-- (p{type: $}+ol[type=$]>li{HTML,CSS,JavaScript}*3)*5 -->
+    <p>type: 1</p>
+    <ol type="1">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+    <p>type: A</p>
+    <ol type="A">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+    <p>type: a</p>
+    <ol type="a">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+    <p>type: I</p>
+    <ol type="I">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+    <p>type: i</p>
+    <ol type="i">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+
+    <hr />
+    <hr />
+    <h1>83-page ol4.html example</h1>
+    <!-- (p{type: $}+ol[type=$]>li{HTML,CSS,JavaScript}*3)*5 -->    <p>type: 1 made with style attribute</p>
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+    <p>type: A made with style attribute</p>
+    <ol style="list-style-type: upper-alpha">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+    <p>type: a made with style attribute</p>
+    <ol style="list-style-type: lower-alpha">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+    <p>type: I made with style attribute</p>
+    <ol style="list-style-type: upper-roman">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+    <p>type: i made with style attribute</p>
+    <ol style="list-style-type: lower-roman">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+
+    <div class="next-lesson">
       <h1 style="border: none; text-align: center">New html Files</h1>
-      <a href="./fira.html"
-        >https://fira.or.kr/fira/fira_030601.jsp Click me to see:)</a
+      <a href="./tablePractice.html"
+        >Table practice Click me to see:)</a
       >
-      <a href="./tts.html">Fontawesome free icons click me to see:)</a>
-      <a href="./litest.html">li tags like navbar CLick me to see :)</a>
-    </div> -->
+      <!-- <a href="./tts.html">Fontawesome free icons click me to see:)</a>
+      <a href="./litest.html">li tags like navbar CLick me to see :)</a> -->
+    </div>
   </body>
 </html>
