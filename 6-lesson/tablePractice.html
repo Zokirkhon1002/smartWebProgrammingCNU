@@ -8,6 +8,12 @@
     <meta name="author" content="Zokirkhon" />
     <title>Table Practice</title>
     <style>
+      .container1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
       a {
         color: blue;
       }
@@ -24,47 +30,48 @@
   </head>
   <body>
     <a href="./index.html">Back to main file</a>
-    <h1>Table Practice</h1>
+    <div class="container1">
+      <h1>Table Practice 80-page</h1>
 
-    <!-- table>(thead>tr>th{text}*3)+(tbody>(tr>td*3)*7) -->
-    <table>
+      <!-- table>(thead>tr>th{text}*3)+(tbody>((tr>td*3)*3)+((tr>td{type=""})*4)) -->
+      <table>
         <thead>
-            <tr>
-                <th>특징</th>
-                <th>속성 값(예)</th>
-                <th>설명</th>
-            </tr>
+          <tr>
+            <th>특징</th>
+            <th>속성 값(예)</th>
+            <th>설명</th>
+          </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>reversed</td>
-                <td>reversed</td>
-                <td>목록 순서를 내림차순으로 설정합니다.</td>
-            </tr>
-            <tr>
-                <td>start</td>
-                <td>start="number"</td>
-                <td>목록 항목의 값을 숫자로 설정합니다.</td>
-            </tr>
-            <tr>
-                <td rowspan="5">type</td>
-                <td>type="1"</td>
-                <td rowspan="5">블릿기호의 종류를 설정합니다.</td>
-            </tr>
-            <tr>
-                <td>type="A"</td>
-            </tr>
-            <tr>
-                <td>type="a"</td>
-            </tr>
-            <tr>
-                <td>type="I" (대문자 i)</td>
-            </tr>
-            <tr>
-                <td>type="i"</td>
-            </tr>
+          <tr>
+            <td>reversed</td>
+            <td>reversed</td>
+            <td>목록 순서를 내림차순으로 설정합니다.</td>
+          </tr>
+          <tr>
+            <td>start</td>
+            <td>start="number"</td>
+            <td>목록 항목의 값을 숫자로 설정합니다.</td>
+          </tr>
+          <tr>
+            <td rowspan="5">type</td>
+            <td>type="1"</td>
+            <td rowspan="5">블릿기호의 종류를 설정합니다.</td>
+          </tr>
+          <tr>
+            <td>type="A"</td>
+          </tr>
+          <tr>
+            <td>type="a"</td>
+          </tr>
+          <tr>
+            <td>type="I" (대문자 i)</td>
+          </tr>
+          <tr>
+            <td>type="i"</td>
+          </tr>
         </tbody>
-    </table>
-
+      </table>
+    </div>
   </body>
 </html>

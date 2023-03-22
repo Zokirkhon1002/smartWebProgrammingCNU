@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kotibkhonov" />
+    <meta name="author" content="Zokirkhon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+      a {
+        color: blue;
+      }
+      .navbar span {
+        font-size: 2rem;
+        margin-right: 5px;
+      }
+      .navbar li {
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+        transition: all 0.13s ease-in-out;
+        cursor: pointer;
+      }
+      .navbar :is(li:nth-child(1):hover, li:nth-child(1) span) {
+        color: #4267b2;
+      }
+      .navbar :is(li:nth-child(2):hover, li:nth-child(2) span) {
+        color: #0077b5;
+      }
+      .navbar :is(li:nth-child(3):hover, li:nth-child(3) span) {
+        color: #f00;
+      }
+      .navbar :is(li:nth-child(4):hover, li:nth-child(4) span) {
+        color: #c13584;
+      }
+      .navbar :is(li:nth-child(5):hover, li:nth-child(5) span) {
+        color: #0088cc;
+      }
+      .images {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="./index.html">Back to main file</a>
+    <h1>실습</h1>
+
+    <div class="container">
+      <h3>using Fontawesome icons</h3>
+      <ul class="navbar">
+        <li>
+          <span><i class="fa-brands fa-facebook"></i></span>Facebook
+        </li>
+        <li>
+          <span><i class="fa-brands fa-linkedin"></i></span>LinkedIn
+        </li>
+        <li>
+          <span><i class="fa-brands fa-youtube"></i></span>Youtube
+        </li>
+        <li>
+          <span><i class="fa-brands fa-instagram"></i></span>Instagram
+        </li>
+        <li>
+          <span><i class="fa-brands fa-telegram"></i></span>Telegram
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <h3>Pixabay images online free images</h3>
+      <ul class="images">
+        <li>
+          <img
+            width="200"
+            src="https://cdn.pixabay.com/photo/2023/02/23/17/56/turtle-7809341_640.jpg"
+            alt="turtle"
+            title="turtle"
+          />
+        </li>
+        <li>
+          <img
+            width="200"
+            src="https://cdn.pixabay.com/photo/2023/03/15/22/10/blackbird-7855547_640.jpg"
+            alt="blackbird"
+            title="blackbird"
+          />
+        </li>
+        <li>
+          <img
+            width="200"
+            src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg"
+            alt="cat"
+            title="cat"
+          />
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <h3>Pixabay images local folder images</h3>
+      <ul class="images">
+        <li>
+          <img
+            width="200"
+            src="./images/bird-1045954_640.jpg"
+            alt="bird"
+            title="bird"
+          />
+        </li>
+        <li>
+          <img
+            width="200"
+            src="./images/bird-2295431_640.jpg"
+            alt="bird"
+            title="bird"
+          />
+        </li>
+        <li>
+          <img
+            width="200"
+            src="./images/bird-9950_640.jpg"
+            alt="bird"
+            title="bird"
+          />
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
