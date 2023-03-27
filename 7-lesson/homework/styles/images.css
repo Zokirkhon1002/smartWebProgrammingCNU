@@ -13,7 +13,6 @@
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
-  border: 1px solid var(--green);
   border-radius: 10px;
 }
 .images li a {
