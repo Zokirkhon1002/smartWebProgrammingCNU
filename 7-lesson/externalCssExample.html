@@ -6,15 +6,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Kotibkhonov" />
     <meta name="author" content="Zokirkhon" />
+    <link rel="stylesheet" href="./styles/external.css">
     <title>External Css Examples</title>
     <style>
-      a {
+      a:any-link {
         color: blue;
+      }
+      .download {
+        display: block;
+        margin-bottom: 5rem;
       }
     </style>
   </head>
   <body>
     <a href="./index.html">Back to main file</a>
-    <h1>External Css Examples</h1>
+    <h1 id="hyper_text">Hyperlinks to text</h1>
+    <hr />
+    <ul>
+      <li>
+        <a href="https://www.jnu.ac.kr/jnumain.aspx" target="_blank"
+          >전남대학교</a
+        >
+      </li>
+      <li>
+        <a href="https://www.jnu.ac.kr/jnumain.aspx" target="_blank"
+          >스마트수산자원관리학과</a
+        >
+      </li>
+      <li>
+        <a href="https://sso.jnu.ac.kr/Idp/Login.aspx" target="_blank"
+          >전남대포털</a
+        >
+      </li>
+      <li>
+        <a href="https://fontawesome.com/" target="_blank">Fontawesome</a>
+      </li>
+      <li><a href="https://pixabay.com/" target="_blank">Pixabay</a></li>
+    </ul>
+    <h1 id="hyper_img">hyperlinks to image</h1>
+    <hr />
+    <a
+      href="https://pixabay.com/ko/photos/%ec%83%88-%ec%a7%80%ec%a0%90-%ec%95%89%ec%95%84-%ea%b9%83%ed%84%b8-2295431/"
+      target="_blank"
+    >
+      <img
+        src="https://cdn.pixabay.com/photo/2017/05/08/13/15/bird-2295431_1280.jpg"
+        alt="새의 무료 사진"
+        width="400"
+        height="auto"
+        title="Bird on the tree"
+      />
+    </a>
+    <a
+      href="https://cdn.pixabay.com/photo/2017/05/08/13/15/bird-2295431_1280.jpg"
+      download
+      class="download"
+      >Download</a
+    >
+    <h1></h1>
+    <hr />
+    <ul>
+      <li>
+        <a
+          href="https://pixabay.com/ko/photos/%ec%82%ac%ec%8a%b4-%ed%8f%ac%ec%9c%a0-%eb%8f%99%eb%ac%bc-%ec%a0%8a%ec%9d%80-%eb%8f%99%eb%ac%bc-1367217/"
+          target="_blank"
+          ><img
+            width="400"
+            height="auto"
+            src="https://cdn.pixabay.com/photo/2016/05/02/13/17/deer-1367217_960_720.jpg"
+            alt="사슴의 무료 사진"
+            title="사슴의 무료 사진"
+        /></a>
+        <a
+          href="https://cdn.pixabay.com/photo/2016/05/02/13/17/deer-1367217_960_720.jpg"
+          download
+          class="download"
+          >Download</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://pixabay.com/ko/photos/%ea%bd%83%eb%93%a4-%eb%82%98%eb%b9%84-19830/"
+          target="_blank"
+          ><img
+            width="400"
+            height="auto"
+            src="https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_960_720.jpg"
+            alt="꽃들의 무료 사진"
+            title="꽃들의 무료 사진"
+        /></a>
+        <a
+          href="https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_960_720.jpg"
+          download
+          class="download"
+          >Download</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://pixabay.com/ko/photos/%eb%b6%84%ed%99%8d-%eb%b2%9a%ea%bd%83-%ea%bd%83%eb%93%a4-%ec%a7%80%ec%a0%90-324175/"
+          target="_blank"
+          ><img
+            width="400"
+            height="auto"
+            src="https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175_960_720.jpg"
+            alt="분홍의 무료 사진"
+            title="분홍의 무료 사진"
+        /></a>
+        <a
+          href="https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175_960_720.jpg"
+          download
+          class="download"
+          >Download</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://pixabay.com/ko/photos/%eb%b2%9a%ea%bd%83-%eb%82%98%eb%ac%b4-%eb%b6%84%ed%99%8d-%ea%bd%83%eb%93%a4-1225186/"
+          target="_blank"
+          ><img
+            width="400"
+            height="auto"
+            src="https://cdn.pixabay.com/photo/2016/02/27/06/43/cherry-blossom-tree-1225186_960_720.jpg"
+            alt="벚꽃 나무의 무료 사진"
+            title="벚꽃 나무의 무료 사진"
+        /></a>
+        <a
+          href="https://cdn.pixabay.com/photo/2016/02/27/06/43/cherry-blossom-tree-1225186_960_720.jpg"
+          download
+          class="download"
+          >Download</a
+        >
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="box" id="box1">
+        <a href="#hyper_text">
+          <h3>Hyperlinks to text</h3>
+        </a>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minus
+          numquam vero quasi omnis consectetur perspiciatis. Blanditiis, ratione
+          rerum? Voluptates facere quasi labore et amet illum molestias neque
+          dolor aliquam earum sunt deserunt nisi eaque pariatur quae aspernatur
+          dolorem possimus hic accusamus qui officiis, unde modi. Aut autem
+          quaerat nulla?
+        </p>
+      </div>
+      <div class="box" id="box2">
+        <a href="#hyper_img">
+          <h3>hyperlinks to image</h3>
+        </a>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minus
+          numquam vero quasi omnis consectetur perspiciatis. Blanditiis, ratione
+          rerum? Voluptates facere quasi labore et amet illum molestias neque
+          dolor aliquam earum sunt deserunt nisi eaque pariatur quae aspernatur
+          dolorem possimus hic accusamus qui officiis, unde modi. Aut autem
+          quaerat nulla?
+        </p>
+      </div>
+    </div>
   </body>
 </html>
