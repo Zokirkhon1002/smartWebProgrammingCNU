@@ -13,6 +13,7 @@
         flex-direction: column;
         border: 1px solid #f00;
         padding: 1rem;
+        margin-top: 10rem;
       }
       .next-lesson a {
         display: inline-block;
@@ -20,21 +21,127 @@
         color: #00f;
         border-radius: 10px;
       }
+      body {
+        padding-bottom: 10rem;
+      }
+      body > h2 {
+        border-top: 2px solid gray;
+        margin-top: 10rem;
+      }
       a {
         border: 1px solid #00f;
       }
       p {
         font-weight: bolder;
       }
+      .container1 {
+        background-color: rgba(100, 148, 237, 0.588);
+      }
+      .container1 h1 {
+        color: #f00;
+      }
+      .container1 h2 {
+        color: #0f0;
+      }
+      .container2 {
+        background-color: rgba(0, 0, 255, 0.429);
+      }
+      .box {
+        width: 100px;height: 100px; border: 1px solid red;
+      }
+      .container3 {
+        background-color: rgba(255, 0, 0, 0.428);
+      }
+      .blue {
+        color: #00f;
+      }
+      .container4 {
+        background-color: beige;
+      }
+      .container4 h2.green {
+        color: green;
+      }
+      .container5 {
+        background-color: rgba(80, 255, 133, 0.541);
+      }
+      #box,#box2 {
+        width: 100px;
+        height: 100px;
+      }
+      #box {
+        border: 1px solid red;
+      }
+      #box2 {
+        border: 1px solid blue;
+      }
+      .container6 {
+        background-color: rgba(100, 148, 237, 0.577);
+      }
+      .purple {
+        color: purple;
+      }
+      #bold {
+        font-weight: bolder;
+      }
+      /* !important */
+      .lightblue {
+        color: lightblue !important;
+      }
+      .lightblue {
+        color: red;
+      }
     </style>
   </head>
   <body>
     <h1>7-lesson</h1>
-    <!-- <div class="next-lesson">
+    <h2>152-page</h2>
+    <div class="container1">
+        <h1>h1 태그</h1>
+        <h2>h2 태그</h2>
+    </div>
+    <h2>153-page</h2>
+    <div class="container2">
+        <div class="box">box container1</div>
+        <div class="box">box container2</div>
+    </div>
+    <h2>154-page</h2>
+    <div class="container3">
+        <h2 class="blue">box container1</h2>
+        <p class="blue">box container2</p>
+    </div>
+    <h2>154-page 2-example</h2>
+    <div class="container4">
+        <h2 class="green">box container1</h2>
+        <p class="green">box container2</p>
+    </div>
+    <h2>155-page</h2>
+    <div class="container5">
+        <div id="box">box container1</div>
+        <div id="box2">box container2</div>
+    </div>
+    <h2>156-page</h2>
+    <div class="container6">
+        <div class="purple">box class</div>
+        <div class="purple" id="bold">box class and id</div>
+    </div>
+    <h2>156-page</h2>
+    <div class="container7">
+        <div class="lightblue">box class !important</div>
+        <div class="lightblue">box class !important</div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="next-lesson">
       <h1 style="border: none; text-align: center">New html Files</h1>
-      <a href="./tablePractice.html">Table practice Click me to see:)</a>
-      <a href="./images.html">Fontawesome and images click me to see:)</a>
-      <!-- <a href="./litest.html">li tags like navbar CLick me to see :)</a> -->
-    </div> -->
+      <a href="./externalCssExample.html">External Css Examples Click me to see:)</a>
+      <!-- <a href="./images.html">Fontawesome and images click me to see:)</a>
+      <a href="./litest.html">li tags like navbar CLick me to see :)</a>  -->
+    </div>
   </body>
 </html>
