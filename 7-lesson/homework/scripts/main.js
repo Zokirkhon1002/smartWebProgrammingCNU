@@ -28,15 +28,6 @@ navbarItems.forEach((item) => {
       checkbox.checked = false;
       scrollOn();
     }
-
-    if (!e.target.parentElement.className.includes("active")) {
-      navbarItems.forEach((li) => {
-        if (li.className.includes("active")) {
-          li.classList.remove("active");
-        }
-      });
-      e.target.parentElement.classList.add("active");
-    }
   });
 });
 

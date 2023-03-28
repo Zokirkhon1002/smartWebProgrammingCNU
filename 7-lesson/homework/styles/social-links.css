@@ -1,0 +1,30 @@
+.social-links {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  list-style-type: none;
+  gap: 0.2rem;
+}
+.social-link a {
+  background-color: var(--gray);
+  color: var(--white);
+  padding: 1rem 0.5rem;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.12s ease-in-out;
+}
+.fa-solid,
+.fa-brands {
+  font-size: 2rem;
+  margin-right: 7px;
+}
+.social-link a:hover {
+  color: var(--green);
+  background-color: #fff;
+  font-size: 1.5rem;
+}
