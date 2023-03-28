@@ -55,6 +55,9 @@ nav {
   color: var(--white);
   display: flex;
 }
+.active {
+  background-color: var(--green);
+}
 .item {
   width: 100%;
   text-align: center;
@@ -70,8 +73,11 @@ nav {
   width: 100%;
   transition: background 0.1s ease-in-out;
 }
+.list:hover > :not(:hover) {
+  opacity: 0.4;
+}
 .item:hover {
-  background: var(--hover-gray);
+  background: var(--green);
   cursor: pointer;
 }
 
@@ -84,14 +90,19 @@ section {
   scroll-margin-top: 3.9rem;
   min-height: 89vh;
   padding: 0.5rem;
+  border-bottom: 1px solid var(--green);
+}
+section:last-child {
+  border-bottom: none;
 }
 section > h1 {
   text-align: center;
   margin: 1rem 0;
 }
-section:target {
-  border: 1px solid rebeccapurple;
+section:target > h1 {
+  color: var(--green);
 }
+
 footer {
   text-align: center;
   position: sticky;
@@ -105,7 +116,7 @@ footer {
 }
 @media only screen and (max-width: 620px) {
   section {
-    scroll-margin-top: 1rem;
+    scroll-margin-top: 0;
   }
   section:nth-child(1) {
     margin-top: 2rem;
@@ -204,5 +215,11 @@ footer {
   #check:checked ~ label #open {
     position: fixed;
     transform: scale(0);
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  footer {
+    font-size: 0.7rem;
   }
 }

@@ -1,24 +1,44 @@
+// @ts-nocheck
 const checkbox = document.getElementById("check");
-const itemsInArr = Array.from(document.querySelectorAll(".item"));
-const listUl = document.querySelector(".list");
-const closeBtn = document.getElementById("close");
-const openBtn = document.getElementById("open");
+const sections = document.querySelectorAll("section");
+const navbarItems = document.querySelectorAll(".item");
 
-if(window.matchMedia("max-width: 620px")){
-   items.forEach(item => {
-    item.addEventListener("click" => {
-    if (checkbox.checked){
-      listUl.style.top = "-120%";
-      closeBtn.style.opacity = "0";
-      closeBtn.style.transform = "scale(0)";
+window.onscroll = () => {
+  sections.forEach((section) => {
+    let [top, offsetTop, offsetHeight, id] = [
+      window.scrollY,
+      section.offsetTop,
+      section.offsetHeight,
+      section.getAttribute("id"),
+    ];
+    if (top >= offsetTop - 70 && top < offsetTop + offsetHeight + 400) {
+      navbarItems.forEach((li) => {
+        li.classList.remove("active");
+        if (li.querySelector("a").getAttribute("href") === "#" + id) {
+          li.classList.add("active");
+        }
+      });
     }
-    checkbox.checked = false;
-    openBtn.style.transform = "scale(1)";
-    // position
-  })
-})
+  });
+};
 
-}
+navbarItems.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    if (window.matchMedia("max-width: 620px")) {
+      checkbox.checked = false;
+      scrollOn();
+    }
+
+    if (!e.target.parentElement.className.includes("active")) {
+      navbarItems.forEach((li) => {
+        if (li.className.includes("active")) {
+          li.classList.remove("active");
+        }
+      });
+      e.target.parentElement.classList.add("active");
+    }
+  });
+});
 
 function scrollOff() {
   document.body.style.overflow = "hidden";
