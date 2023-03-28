@@ -28,3 +28,22 @@
   background-color: #fff;
   font-size: 1.5rem;
 }
+
+#myBtn {
+  display: none;
+  position: absolute;
+  right: 10px;
+  width: 60px;
+  height: 40px;
+  bottom: 10px;
+  background-color: var(--hover-gray);
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.12s ease-in-out;
+}
+#myBtn:hover {
+  background-color: var(--green);
+}

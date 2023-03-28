@@ -2,8 +2,14 @@
 const checkbox = document.getElementById("check");
 const sections = document.querySelectorAll("section");
 const navbarItems = document.querySelectorAll(".item");
+let scrollToTop = document.getElementById("myBtn");
 
 window.onscroll = () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTop.style.display = "block";
+  } else {
+    scrollToTop.style.display = "none";
+  }
   sections.forEach((section) => {
     let [top, offsetTop, offsetHeight, id] = [
       window.scrollY,
@@ -36,4 +42,8 @@ function scrollOff() {
 }
 function scrollOn() {
   document.body.style.overflow = "auto";
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
