@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Kotibkhonov" />
     <meta name="author" content="Zokirkhon" />
-    <title>9-lesson</title>
+    <link rel="shortcut icon" href="./icons/favicon2.ico" type="image/x-icon" />
+    <title>favicon</title>
     <style>
       .next-lesson {
         display: flex;
@@ -24,10 +25,63 @@
       a {
         border: 1px solid #00f;
       }
+      body {
+        background-color: #a5d7e8;
+      }
+      .first {
+        background-color: rgb(6, 6, 36);
+        color: rgb(3, 200, 29);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-size: 1.1rem;
+        font-weight: bolder;
+      }
+
+      .second {
+        background-color: rgb(2, 61, 15);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #fff;
+        font: 1.3rem bold;
+      }
     </style>
   </head>
   <body>
-    <h1>9-lesson</h1>
+    <h1>노래 가사</h1>
+    <!-- https://www.favicon.cc/ -->
+    <!-- https://colorhunt.co/ -->
+    <a style="border: none" href="https://www.favicon.cc/"
+      >https://www.favicon.cc/</a
+    ><br />
+    <a style="border: none" href="https://colorhunt.co/"
+      >https://colorhunt.co/</a
+    ><br />
+
+    <h1>pre,code,(tags)</h1>
+    <pre class="first">
+        <code>
+ // Word Counter
+ const wordCount = (sentence) => {
+     let wordsArr = sentence.replace(/[.|,]/g,"").split(" ");
+     let answerList = {};
+
+     wordsArr.forEach(i=> (!answerList[i]) ? (answerList[i] = 1) : (answerList[i]++))
+  
+     return Object.entries(answerList)
+     .sort(([keyA,valueA], [keyB,valueB]) => (valueB - valueA))
+     .reduce((acc, [key, value]) => ({ ...acc, [key]: value }), {});
+}
+console.log(wordCount(text))
+        </code>
+    </pre>
+    <pre class="second">
+        Text in a pre element
+        is displayed in a fixed-width
+        font, and it preserves
+        both      spaces and
+        line breaks
+        </pre
+    >
     <!-- <div class="next-lesson">
       <h1 style="border: none; text-align: center">New html Files</h1>
       <a href="./remExamples.html">units Rem examples Click me to see:)</a>
