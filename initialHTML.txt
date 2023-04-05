@@ -30,6 +30,24 @@
     <meta name="author" content="Kotibkhonov" />
     <meta name="author" content="Zokirkhon" />
     <title>8-lesson</title>
+    <style>
+      .next-lesson {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #f00;
+        padding: 1rem;
+        margin-top: 10rem;
+      }
+      .next-lesson a {
+        display: inline-block;
+        padding: 1rem;
+        color: #00f;
+        border-radius: 10px;
+      }
+      a {
+        border: 1px solid #00f;
+      }
+    </style>
 </head>
 <body>
     <h1>8-lesson</h1>

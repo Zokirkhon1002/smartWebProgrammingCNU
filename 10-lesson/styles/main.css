@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@400;500&display=swap");
+
+h1 {
+  font-family: "Delicious Handrawn", cursive;
+  font-family: "Nanum Brush Script", cursive;
+}
+
+.box p {
+  font-family: "Delicious Handrawn", cursive;
+  font-family: "Nanum Brush Script", cursive;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.box2__icons {
+  font-family: "Nanum Brush Script", cursive;
+  list-style: none;
+}
+.box2__icons li {
+  color: blue;
+}
+.box2__icons li span {
+  font-size: 2rem;
+}
+.box2__icons li:nth-child(3) {
+  color: rgb(132, 132, 7);
+}
+.box2__icons li:nth-child(5) {
+  color: gray;
+}
+.box2__icons pre {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding: 10px;
+}
