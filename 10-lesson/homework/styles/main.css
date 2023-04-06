@@ -1,0 +1,36 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 16px;
+}
+section:nth-child(3) {
+  border-bottom: 2px solid rgb(242, 0, 0);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  display: flex;
+}
+input,
+select {
+  flex-grow: 1;
+  width: 70%;
+  font: inherit;
+}
+
+.iconsContainer {
+  border: 1px solid black;
+  color: green;
+  background-color: white;
+  gap: 0px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.material-symbols-outlined {
+  width: 32px;
+  height: 32px;
+}
