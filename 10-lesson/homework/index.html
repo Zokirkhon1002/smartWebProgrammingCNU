@@ -11,124 +11,471 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/colors.css" />
     <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon" />
     <title>Document</title>
   </head>
   <body>
-    <h1>Home work</h1>
-    <section>
-      <label for="fontFamily">font-family: </label>
-      <select name="fontFamily" id="fontFamily">
-        <option value="'Courier New', Courier, monospace">
-          'Courier New', Courier, monospace
-        </option>
-        <option
-          value="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"
-        >
-          'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-        </option>
-        <option
-          value="'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
-        >
-          'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-        </option>
-        <option
-          value="'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"
-        >
-          'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
-          Unicode', Geneva, Verdana, sans-serif
-        </option>
-        <option value="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
-          'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-        </option>
-        <option value="'Times New Roman', Times, serif">
-          'Times New Roman', Times, serif
-        </option>
-        <option
-          value="'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
-        >
-          'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
-          Arial, sans-serif
-        </option>
-        <option value="Arial, Helvetica, sans-serif">
-          Arial, Helvetica, sans-serif
-        </option>
-        <option
-          value="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"
-        >
-          Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-        </option>
-        <option value="Georgia, 'Times New Roman', Times, serif">
-          Georgia, 'Times New Roman', Times, serif
-        </option>
-        <option
-          value="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"
-        >
-          Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-        </option>
-        <option value="Verdana, Geneva, Tahoma, sans-serif">
-          Verdana, Geneva, Tahoma, sans-serif
-        </option>
-        <option value="cursive">cursive</option>
-        <option value="fantasy">fantasy</option>
-        <option value="monospace">monospace</option>
-        <option value="sans-serif">sans-serif</option>
-        <option value="serif">serif</option>
-        <option
-          value="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
-        >
-          system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-        </option>
-      </select>
-    </section>
+    <div class="dynamicStyle">
+      <h1 style="text-align: center">Home work</h1>
+      <hr />
+      <br />
+      <br />
+      <br />
+      <section>
+        <label for="fontFamily">font-family: </label>
+        <select name="fontFamily" id="fontFamily">
+          <option value="'Courier New', Courier, monospace">
+            'Courier New', Courier, monospace
+          </option>
+          <option
+            value="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"
+          >
+            'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+          </option>
+          <option
+            value="'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
+          >
+            'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+          </option>
+          <option
+            value="'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"
+          >
+            'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
+            Unicode', Geneva, Verdana, sans-serif
+          </option>
+          <option value="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+            'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+          </option>
+          <option value="'Times New Roman', Times, serif">
+            'Times New Roman', Times, serif
+          </option>
+          <option
+            value="'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
+          >
+            'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida
+            Sans', Arial, sans-serif
+          </option>
+          <option value="Arial, Helvetica, sans-serif">
+            Arial, Helvetica, sans-serif
+          </option>
+          <option
+            value="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"
+          >
+            Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+          </option>
+          <option value="Georgia, 'Times New Roman', Times, serif">
+            Georgia, 'Times New Roman', Times, serif
+          </option>
+          <option
+            value="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"
+          >
+            Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+          </option>
+          <option value="Verdana, Geneva, Tahoma, sans-serif">
+            Verdana, Geneva, Tahoma, sans-serif
+          </option>
+          <option value="cursive">cursive</option>
+          <option value="fantasy">fantasy</option>
+          <option value="monospace">monospace</option>
+          <option value="sans-serif">sans-serif</option>
+          <option value="serif">serif</option>
+          <option
+            value="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
+          >
+            system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+            Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+          </option>
+        </select>
+      </section>
 
-    <section>
-      <label for="fontSize">font-size: </label>
-      <input id="fontSize" type="text" placeholder="16px" />
-    </section>
+      <section>
+        <label for="fontSize">font-size: </label>
+        <input id="fontSize" type="text" placeholder="16px" />
+      </section>
 
-    <section>
-      <label for="backgroundColor">background-color: </label>
-      <input id="backgroundColor" type="text" placeholder="white" />
-    </section>
+      <section>
+        <label for="backgroundColor">background-color: </label>
+        <input id="backgroundColor" type="text" placeholder="white" />
+      </section>
 
-    <section>
-      <label for="color">color: </label>
-      <input id="color" type="text" placeholder="green" />
-    </section>
+      <section>
+        <label for="color">color: </label>
+        <input id="color" type="text" placeholder="green" />
+      </section>
 
-    <section>
-      <label for="gap">gap(letter-spacing): </label>
-      <input type="text" id="gap" placeholder="0px" />
-    </section>
+      <section>
+        <label for="gap">gap(letter-spacing): </label>
+        <input type="text" id="gap" placeholder="0px" />
+      </section>
 
-    <section>
-      <label for="justifyContent">justify-content(text-align): </label>
-      <input type="text" id="justifyContent" placeholder="left" />
-    </section>
+      <section>
+        <label for="justifyContent">justify-content(text-align): </label>
+        <input type="text" id="justifyContent" placeholder="left" />
+      </section>
 
-    <section>
-      <label for="borderColor">border-color: </label>
-      <input type="text" id="borderColor" placeholder="black" />
-    </section>
+      <section>
+        <label for="borderColor">border-color: </label>
+        <input type="text" id="borderColor" placeholder="black" />
+      </section>
 
-    <section>
-      <label for="padding">padding: </label>
-      <input type="text" id="padding" placeholder="0px" />
-    </section>
+      <section>
+        <label for="padding">padding: </label>
+        <input type="text" id="padding" placeholder="0px" />
+      </section>
 
-    <section>
-      <label for="googleIcon">add icon choose name: </label>
-      <select name="googleIcon" id="googleIcon">
-        <option value="favourite">favourite</option>
-      </select>
-    </section>
-    <div class="iconsContainer" id="iconsContainer">
-      <span class="material-symbols-outlined"> favorite </span>
-      <span class="material-symbols-outlined"> thumb_up </span>
+      <section>
+        <label for="googleIcon">add icon choose name: </label>
+        <select name="googleIcon" id="googleIcon">
+          <option value="favourite">favourite</option>
+        </select>
+      </section>
+      <div class="iconsContainer" id="iconsContainer">
+        <span class="material-symbols-outlined"> favorite </span>
+        <span class="material-symbols-outlined"> thumb_up </span>
+      </div>
+      <script src="./scripts/iconsArr.js"></script>
+      <script src="./scripts/app.js"></script>
     </div>
-    <script src="./scripts/iconsArr.js"></script>
-    <script src="./scripts/app.js"></script>
+    <div class="nodejs-typescript">
+      <header>
+        <h1>
+          Inspired by
+          <a
+            class="underline"
+            title="click me to see"
+            target="_blank"
+            href="https://nodejs.dev/en/learn/nodejs-with-typescript/"
+            >NodeJs with TypeScript</a
+          >
+        </h1>
+      </header>
+      <hr />
+      <main>
+        <div class="head">
+          <h2>Node.js with TypeScript</h2>
+          <p>
+            Find out why TypeScript is an awesome tool and learn to use it by
+            yourself.
+          </p>
+          <h5>ARTICLE AUTHORS</h5>
+          <ul class="head__avatars">
+            <li class="head__avatar">
+              <a href="https://github.com/sbielenica"
+                ><img
+                  src="https://github.com/sbielenica.png?size=60"
+                  alt="sbielenica"
+                  title="sbielenica"
+              /></a>
+            </li>
+            <li class="head__avatar">
+              <a href="https://github.com/ovflowd"
+                ><img
+                  src="https://github.com/ovflowd.png?size=60"
+                  alt="ovflowd"
+                  title="ovflowd"
+              /></a>
+            </li>
+            <li class="head__avatar">
+              <a href="https://github.com/vaishnav-mk"
+                ><img
+                  src="https://github.com/vaishnav-mk.png?size=60"
+                  alt="vaishnav-mk"
+                  title="vaishnav-mk"
+              /></a>
+            </li>
+          </ul>
+          <details>
+            <summary>TABLE OF CONTENTS</summary>
+            <ul class="head__table-contents">
+              <li class="head__table-content">
+                <a href="#what-is-typescript">What is TypeScript</a>
+                <ul>
+                  <li><a href="#examples">Examples</a></li>
+                </ul>
+              </li>
+              <li class="head__table-content">
+                <a href="#more-about-typescript">More about TypeScript</a>
+              </li>
+              <li class="head__table-content">
+                <a href="#typescript-in-the-nodejs-world"
+                  >TypeScript in the Node.js world</a
+                >
+              </li>
+            </ul>
+          </details>
+        </div>
+        <div class="main">
+          <h2 id="what-is-typescript">What is TypeScript</h2>
+          <p>
+            <a class="underline" href="https://www.typescriptlang.org/"
+              ><b>TypeScript</b></a
+            >
+            is a trendy open-source language maintained and developed by
+            Microsoft. It's loved and used by a lot of software developers
+            around the world.
+          </p>
+
+          <p>
+            Basically, it's a superset of JavaScript that adds new capabilities
+            to the language. The most notable addition is static type
+            definitions, something that is not present in plain JavaScript.
+            Thanks to types, it's possible, for example, to declare what kind of
+            arguments we are expecting and what is returned exactly in our
+            functions or what's the exact shape of the object that we are
+            creating. TypeScript is a really powerful tool and opens a new world
+            of possibilities in JavaScript projects. It makes our code more
+            secure and robust by preventing many bugs before the code is even
+            shipped - it catches problems during code development and integrates
+            wonderfully with code editors like Visual Studio Code.
+          </p>
+          <p>
+            We can talk about other TypeScript benefits later, let's see some
+            examples now!
+          </p>
+
+          <h2 id="examples">Examples</h2>
+          <p>
+            Take a look at this code snippet and then we can unpack it together:
+          </p>
+
+          <div class="coding bg-coding">
+            <div class="coding__title">
+              <button class="coding__title__left btn-bg1">ts</button>
+              <button class="coding__title__right btn-bg2">copy</button>
+            </div>
+            <pre class="coding__body">
+    <span class="blue">type</span> <span class="red">User</span> = { 
+      name: <span class="green">string</span>;
+      age: <span class="green">number</span>;
+    };
+
+
+    <span class="blue">function</span> <span class="red">isAdult</span>(user: User): <span class="green">boolean</span>{
+      <span class="blue">return</span> user.age >= <span class="pink">18</span>;
+    }
+
+
+    <span class="blue">const</span> justine: User = {
+      name: 'Justine',
+      age: <span class="pink">23</span>,
+    };
+
+
+    <span class="blue">const</span> isJustineAnAdult: <span class="green">boolean</span> = <span class="red">isAdult</span>(justine);
+            </pre>
+          </div>
+
+          <p>
+            The first part (with the
+            <span class="bg-coding additional-padding">type</span> keyword) is
+            responsible for declaring our custom object type representing users.
+            Later we utilize this newly created type to create function
+            <span class="bg-coding additional-padding">isAdult</span> that
+            accepts one argument of type
+            <span class="bg-coding additional-padding">User</span> and returns
+            <span class="bg-coding additional-padding">boolean</span>. After
+            this, we create
+            <span class="bg-coding additional-padding">justine</span>, our
+            example data that can be used for calling the previously defined
+            function. Finally, we create a new variable with information on
+            whether <span class="bg-coding additional-padding">justine</span> is
+            an adult.
+          </p>
+
+          <p>
+            There are additional things about this example that you should know.
+            Firstly, if we would not comply with declared types, TypeScript
+            would alarm us that something is wrong and prevent misuse. Secondly,
+            not everything must be typed explicitly - TypeScript is very smart
+            and can deduce types for us. For example, variable
+            <span class="bg-coding additional-padding">isJustineAnAdult</span>
+            would be of type
+            <span class="bg-coding additional-padding">boolean</span> even if we
+            didn't type it explicitly or
+            <span class="bg-coding additional-padding">justine</span> would be
+            valid argument for our function even if we didn't declare this
+            variable as of
+            <span class="bg-coding additional-padding">User</span> type.
+          </p>
+          <p>Okay, so we have some TypeScript code. Now how do we run it?</p>
+          <p>
+            <b>First thing to do is to install TypeScript in our project:</b>
+          </p>
+          <div class="coding bg-coding">
+            <div class="coding__title">
+              <button class="coding__title__left btn-bg1">bash</button>
+              <button class="coding__title__right btn-bg2">copy</button>
+            </div>
+            <pre class="coding__body">
+    <span class="red">npm</span> i <span class="orange">-D</span> typescript
+            </pre>
+          </div>
+
+          <p>
+            Now we can compile it to JavaScript using
+            <span class="bg-coding additional-padding">tsc</span> command in the
+            terminal. Let's do it!
+          </p>
+          <p>
+            Assuming that our file is named
+            <span class="bg-coding additional-padding">example.ts</span>, the
+            command would look like:
+          </p>
+
+          <div class="coding bg-coding">
+            <div class="coding__title">
+              <button class="coding__title__left btn-bg1">bash</button>
+              <button class="coding__title__right btn-bg2">copy</button>
+            </div>
+            <pre class="coding__body">
+    npx tsc example.ts
+            </pre>
+          </div>
+
+          <p class="bg">
+            <a class="underline" href="https://www.npmjs.com/package/npx"
+              >npx</a
+            >
+            here stands for Node Package Execute. This tool allows us to run
+            TypeScript's compiler without installing it globally.
+          </p>
+
+          <p>
+            <span class="bg-coding additional-padding">tsc</span> is the
+            TypeScript compiler which will take our TypeScript code and compile
+            it to JavaScript. This command will result in a new file named
+            <span class="bg-coding additional-padding">example.js</span> that we
+            can run using Node.js. Now when we know how to compile and run
+            TypeScript code let's see TypeScript bug-preventing capabilities in
+            action!
+          </p>
+          <p><b>This is how we will modify our code:</b></p>
+
+          <div class="coding bg-coding">
+            <div class="coding__title">
+              <button class="coding__title__left btn-bg1">ts</button>
+              <button class="coding__title__right btn-bg2">copy</button>
+            </div>
+            <pre class="coding__body">
+    <span class="blue">type</span> <span class="red">User</span> = { 
+      name: <span class="green">string</span>;
+      age: <span class="green">number</span>;
+    };
+
+
+    <span class="blue">function</span> <span class="red">isAdult</span>(user: User): <span class="green">boolean</span>{
+      <span class="blue">return</span> user.age >= <span class="pink">18</span>;
+    }
+
+
+    <span class="blue">const</span> justine: User = {
+      name: 'Justine',
+      age: 'Secret!',
+    };
+
+
+    <span class="blue">const</span> isJustineAnAdult: <span class="green">boolean</span> = <span class="red">isAdult</span>(justine, "I shouldn't be here!");
+            </pre>
+          </div>
+
+          <p><b>And this is what TypeScript has to say about this:</b></p>
+
+          <!-- <div class="coding bg-coding">
+            <div class="coding__title">
+              <button class="coding__title__left btn-bg1">bash</button>
+              <button class="coding__title__right btn-bg2">copy</button>
+            </div>
+            <pre class="coding__body">
+    
+            </pre>
+          </div> -->
+          <div class="coding bg-coding">
+            <div class="coding__title">
+              <button class="coding__title__left btn-bg1">bash</button>
+              <button class="coding__title__right btn-bg2">copy</button>
+            </div>
+            <pre class="coding__body">
+    example.ts:12:3 - error TS2322: Type 'string' is not assignable to <span class="red">type</span> 'number'<span class="red">.</span>
+    <span class="pink">12</span>    age: "Secret!",
+          ~~~
+
+      example.ts:3:3
+        <span class="pink">3</span>  age: number
+           ~~~
+        The expected <span class="red">type</span> comes from property 'age' <span class="red">which</span> is declared here on <span class="red">type</span> 'User'
+    example.ts:15:7 - error TS2322: Type 'boolean' is not assignable to <span class="red">type</span> 'string'<span class="red">.</span>
+    <span class="pink">15</span> const isJustineAnAdult: string = isAdult(justine, "I shouldn't be here!");
+             ~~~~~~~~~~~~~~~~
+    example.ts:15:51 - error TS2554: Expected <span class="pink">1</span> arguments, but got <span class="pink">2</span>.
+    <span class="pink">15</span> const isJustineAnAdult: string = isAdult(justine, "I shouldn't be here!");
+
+
+    Found <span class="pink">3</span> error.
+            </pre>
+          </div>
+          <p>
+            As you can see TypeScript successfully prevents us from shipping
+            code that could work unexpectedly. That's wonderful!
+          </p>
+          <h2 id="more-about-typescript">More about TypeScript</h2>
+          <p>
+            TypeScript offers a whole lot of other great mechanisms like
+            interfaces, classes, utility types and so on. Also, on bigger
+            projects you can declare your TypeScript compiler configuration in a
+            separate file and granularly adjust how it works, how strict it is
+            and where it stores compiled files for example. You can read more
+            about all this awesome stuff in
+            <a class="underline" href="https://www.typescriptlang.org/docs"
+              >the official TypeScript docs</a
+            >.
+          </p>
+          <p>
+            Some of the other benefits of TypeScript that are worth mentioning
+            are that it can be adopted progressively, it helps making code more
+            readable and understandable and it allows developers to use modern
+            language features while shipping code for older Node.js versions.
+          </p>
+          <h2 id="typescript-in-the-nodejs-world">
+            TypeScript in the Node.js world
+          </h2>
+          <p>
+            TypeScript is well-established in the Node.js world and used by many
+            companies, open-source projects, tools and frameworks. Some of the
+            notable examples of open-source projects using TypeScript are:
+          </p>
+          <ul>
+            <li class="normal">
+              <a class="underline" href="https://nestjs.com/">NestJS</a>
+              - robust and fully-featured framework that makes creating scalable
+              and well-architected systems easy and pleasant
+            </li>
+            <li class="normal">
+              <a class="underline" href="https://typeorm.io/#/">TypeORM</a>
+              - great ORM influenced by other well-known tools from other
+              languages like Hibernate, Doctrine or Entity Framework
+            </li>
+            <li class="normal">
+              <a href="https://prisma.io/" class="underline">Prisma</a> -
+              next-generation ORM featuring a declarative data model, generated
+              migrations and fully type-safe database queries
+            </li>
+            <li class="normal">
+              <a href="https://rxjs.dev/" class="underline">RxJS</a> - widely
+              used library for reactive programming
+            </li>
+            <li class="normal">
+              <a href="https://adonisjs.com/" class="underliner">AdonisJS</a> -
+              A fully featured web framework with Node.js
+            </li>
+            <li class="normal">
+              <a href="https://foalts.org/" class="underline">FoalTs</a> - The
+              Elegant Nodejs Framework
+            </li>
+          </ul>
+          <p>And many, many more great projects... Maybe even your next one!</p>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

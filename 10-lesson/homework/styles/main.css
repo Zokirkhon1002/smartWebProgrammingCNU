@@ -1,15 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.dynamicStyle {
   font-family: "Courier New", Courier, monospace;
   font-size: larger;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
   font-size: 16px;
-}
-section:nth-child(3) {
-  border-bottom: 2px solid rgb(242, 0, 0);
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
 }
 
 section {
@@ -33,4 +39,116 @@ select {
 .material-symbols-outlined {
   width: 32px;
   height: 32px;
+}
+
+
+/* ============= NODEJS ============ */
+.nodejs-typescript {
+  width: 75%;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.nodejs-typescript {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif !important;
+  color: #6b7880 !important;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+  min-height: 400vh;
+}
+a:any-link {
+  text-decoration: none;
+  color: #5fa04e;
+}
+.head {
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.head h2 {
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.head h5 {
+  color: #6b7880;
+}
+.head__avatars {
+  list-style-type: none;
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+  padding-left: 0;
+}
+.head__avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.head__avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #99cc7d;
+}
+details {
+  background-color: #9992;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 5px;
+  color: #6b7880;
+}
+.head__table-contents {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.head__table-content {
+  line-height: 1.5rem;
+}
+.head__table-content a:hover {
+  color: #447338;
+  transition: all 0.17s ease-in-out;
+}
+
+.main {
+  color: #2c3437;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main p {
+  line-height: normal;
+}
+
+.coding {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #2c3437 !important;
+  border-radius: 5px;
+}
+.coding__title {
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.coding__title button {
+  width: 80px;
+  border: none;
+  cursor: pointer;
+}
+.coding__title__left {
+  border-radius: 5px 0 0 0;
+}
+.coding__title__right {
+  border-radius: 0 5px 0 0;
+}
+.coding__body {
+  line-height: 1.4rem;
+  margin: 0.5rem 0;
+  font-size: large;
 }

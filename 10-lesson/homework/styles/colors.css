@@ -1,0 +1,42 @@
+.red {
+  color: #dd4a68;
+}
+.green {
+  color: #690;
+}
+.blue {
+  color: #066291;
+}
+.pink {
+  color: #905;
+}
+.bg-coding {
+  background-color: #e9edf0 !important;
+  overflow-x: auto;
+}
+.bg {
+    background-color: #9992;
+    border-radius: 7px;
+    padding: 5px;
+}
+.orange {
+  color: #e90;
+}
+.btn-bg1 {
+    background-color: #cbd4d9;
+    color: black;
+}
+.btn-bg2 {
+    background-color: #2c3437;
+    color: #fff;
+}
+.additional-padding {
+    padding: 0 5px;
+    border-radius: 5px;
+}
+.normal {
+    line-height: normal;
+}
+.underline {
+    text-decoration: underline !important;
+}
