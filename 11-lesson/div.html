@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kotibkhonov" />
+    <meta name="author" content="Zokirkhon" />
+    <title>Div tag 예제</title>
+    <style>
+      a {
+        color: blue;
+      }
+      .box {
+        border: 1px solid #00f;
+      }
+      /* .box1 {
+        text-align: center;
+        width: 600px;
+      } */
+      /* .box1 img {
+        width: 100%;
+      } */
+      .box1 {
+        text-align: center;
+        width: 700px;
+        margin-left: 50px;
+        border: 10px solid #f00;
+        /* border-left: none; */
+        padding: 40px;
+      }
+      .box1 img {
+        transition: all 0.5s ease-in-out;
+      }
+      .box1 img:hover {
+        border-radius: 10px;
+        transform: scale(1.2) translateY(-35px);
+      }
+      .box2,
+      .box3 {
+        width: 300px;
+        height: 300px;
+        margin: 50px 10px 60px 70px;
+        background: aliceblue;
+        text-align: center;
+      }
+      .box2 {
+        padding: 5rem;
+      }
+      .box2 img {
+        cursor: pointer;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #0000005b;
+        transition: all 0.5s ease-in-out;
+      }
+      .box2 img:hover {
+        transform: scale(1.5);
+      }
+      .box3 {
+        background: lightblue;
+        text-align: end;
+        padding: 2rem;
+        transition: all 0.5s ease-in-out;
+      }
+      .box3:hover {
+        border-radius: 10px;
+        width: 600px;
+      }
+      .box4 {
+        margin-bottom: 15rem;
+      }
+      #left {
+        float: left;
+        width: 60%;
+        padding: 20px;
+        background: #333;
+        box-sizing: border-box;
+        border: 10px solid red;
+      }
+      #right {
+        float: left;
+        width: 40%;
+        padding: 10px;
+        border: 20px solid blue;
+        background: #666;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="./index.html">Back to main file</a>
+    <h1>Div tag 예제</h1>
+    <div class="box box1">
+      Box1
+      <h5>이미지 활용</h5>
+      <img src="../6-lesson/images/bird-9950_640.jpg" alt="bird" title="bird" />
+    </div>
+    <div class="box box2">
+      <h1>Box2</h1>
+      <img
+        src="../6-lesson/images/bird-2295431_640.jpg"
+        alt="bird"
+        title="bird"
+      />
+    </div>
+    <div class="box box3">Box3</div>
+
+    <div class="box4">
+      <div id="left">left</div>
+      <div id="right">right</div>
+    </div>
+  </body>
+</html>
