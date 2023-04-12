@@ -58,6 +58,12 @@ let allPaths = [
     name: "lesson(2023.04.10)",
     path: "./11-lesson/index.html",
   },
+  {
+    id: "12",
+    name: "lesson(2023.04.12)",
+    path: "./12-lesson/index.html",
+    absent: true,
+  },
 ];
 
 window.addEventListener("load", () => {
@@ -65,13 +71,17 @@ window.addEventListener("load", () => {
   let result = "";
   allPaths.forEach((path, idx) => {
     result += `<li key="${path.id}">
-    <a title="${path.name}" target="_blank" href="/${path.path}" >${
+    ${path?.absent ? "<del style='color: red'>" : ""}<a title="${
+      path.name
+    }" target="_blank" href="/${path.path}" >${
       path.name
     }</a> <a target="_blank"  href="https://github.com/Zokirkhon1002/smartWebProgrammingCNU/tree/main/${
       path.path.split("/")[1]
     }" style="text-decoration:underline;" title="${
       path.name
-    }'s code on github'">[<i>code${idx + 1}</i>]</a>
+    }'s code on github'">[<i>code${idx + 1}</i>]</a>${
+      path?.absent ? "</del>" : ""
+    }
           ${
             path?.homework
               ? `<br><ul><li><a href="/${
