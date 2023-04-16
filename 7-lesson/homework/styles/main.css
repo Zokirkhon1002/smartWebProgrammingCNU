@@ -54,6 +54,7 @@ nav {
   background-color: var(--gray);
   color: var(--white);
   display: flex;
+  transition: all 0.15s ease-in-out;
 }
 .active {
   background-color: var(--green);
@@ -65,13 +66,12 @@ nav {
 .item,
 .item a {
   display: inline-block;
+  transition: all 0.15s ease-in-out;
 }
 .item a {
   padding: 20px 20px;
-  transition: 0.4s ease;
   font-size: larger;
   width: 100%;
-  transition: background 0.1s ease-in-out;
 }
 .list:hover > :not(:hover) {
   opacity: 0.4;
@@ -139,7 +139,7 @@ footer {
     height: 3px;
     display: inline-block;
     background-color: var(--black);
-    transition: 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
   #open span::before,
   #open span::after {
@@ -165,7 +165,7 @@ footer {
     right: 25px;
     cursor: pointer;
     transform: scale(0);
-    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
     opacity: 0;
   }
   #close span {
@@ -192,7 +192,7 @@ footer {
     position: fixed;
     text-align: center;
     top: -120%;
-    transition: 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     z-index: 2;
     overflow-y: hidden;
   }
