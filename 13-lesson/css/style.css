@@ -1,0 +1,36 @@
+body {
+  background: url("../images/coffee_1920.jpg") no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box {
+  height: 60%;
+  width: 60%;
+  /* background: url("../images/pink_1920.jpg") no-repeat center; */
+  background: rgb(92, 93, 93);
+  background: linear-gradient(
+    90deg,
+    rgba(92, 93, 93, 1) 0%,
+    rgba(9, 103, 121, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 10px;
+  color: #ff0d0d;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+.box img {
+  width: 70%;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.box img:hover {
+  width: 90%;
+}
