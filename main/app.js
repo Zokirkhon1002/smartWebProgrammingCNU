@@ -64,6 +64,11 @@ let allPaths = [
     path: "./12-lesson/index.html",
     absent: true,
   },
+  {
+    id: "13",
+    name: "lesson(2023.04.24)",
+    path: "./13-lesson/index.html",
+  },
 ];
 
 window.addEventListener("load", () => {
