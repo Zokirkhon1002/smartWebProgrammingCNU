@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Kotibkhonov Zokirkhon" />
     <title>14-lesson</title>
+    <!-- <link rel="stylesheet" href="./styles/reset.css" /> -->
     <style>
       .next-lesson {
         display: flex;
@@ -23,19 +24,111 @@
       a {
         border: 1px solid #00f;
       }
+
+      .mini-box1,
+      .mini-box2 {
+        display: inline-block;
+        width: 400px;
+        height: 300px;
+      }
+      .box1 span {
+        border: 5px solid #000;
+      }
+      span {
+        background-color: rgb(247, 151, 250);
+      }
+      .mini-box2 {
+        box-sizing: border-box;
+      }
+      .box2 .mini-box2 :is(ol, ul, li) {
+        list-style: none;
+      }
+      .box3 .mini-box2 a {
+        text-decoration: none;
+      }
+      .box4 .mini-box2 {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
     </style>
   </head>
   <body>
     <h1>14-lesson</h1>
+    <div class="box1">
+      <h1>box-sizing</h1>
+      <div>
+        <span class="mini-box1">기분</span>
+        <span class="mini-box2">box-sizing: border-box</span>
+      </div>
+    </div>
 
-    <!-- <div class="next-lesson">
+    <div class="box2">
+      <h1>목록 태그</h1>
+      <div>
+        <span class="mini-box1">
+          <ol>
+            <li>목록1</li>
+            <li>목록2</li>
+            <li>목록3</li>
+          </ol>
+          <ul>
+            <li>순서목록1</li>
+            <li>순서목록2</li>
+            <li>순서목록3</li>
+          </ul>
+        </span>
+        <span class="mini-box2"
+          ><ol>
+            <li>목록1</li>
+            <li>목록2</li>
+            <li>목록3</li>
+          </ol>
+          <ul>
+            <li>순서목록1</li>
+            <li>순서목록2</li>
+            <li>순서목록3</li>
+          </ul></span
+        >
+      </div>
+    </div>
+
+    <div class="box3">
+      <h1>Text-Decoration (LINK)</h1>
+      <div>
+        <span class="mini-box1">
+          <a href="#" style="border: none">Chonnam National University</a>
+        </span>
+        <span class="mini-box2"
+          ><a href="#" style="border: none"
+            >Chonnam National University</a
+          ></span
+        >
+      </div>
+    </div>
+
+    <div class="box4">
+      <h1>Text-Decoration (LINK)</h1>
+      <div>
+        <span class="mini-box1"> margin: 0; padding: 0; border: 0; </span>
+        <span class="mini-box2"> margin: 0; padding: 0; border: 0; </span>
+      </div>
+    </div>
+
+    <div class="next-lesson">
       <h1 style="border: none; text-align: center">New html Files</h1>
-      <a href="./remExamples.html">units Rem examples Click me to see:)</a>
-      <a href="./vwExamples.html">vwExamples click me to see:)</a>
-      <a href="./166-page.html">166-page example cLick me to see :)</a>
-      <a href="./163-172-pages.html"
-        >163-172-pages example cLick me to see :)</a
-      >
-    </div> -->
+      <a href="./before1.html">before1 266-page examples Click me to see:)</a>
+      <a href="./after1.html">after1 267-page click me to see:)</a>
+      <a href="./before2.html">before2 268-page example cLick me to see :)</a>
+      <a href="./after2.html">after2 268-page example cLick me to see :)</a>
+      <a href="./before3.html">before3 269-page example cLick me to see :)</a>
+      <a href="./after3.html">after3 270-page example cLick me to see :)</a>
+      <a href="./before4.html">before4 270-page example cLick me to see :)</a>
+      <a href="./after4.html">after4 271-page example cLick me to see :)</a>
+      <a href="./before5.html">before5 271-page example cLick me to see :)</a>
+      <a href="./after5.html">after5 272-page example cLick me to see :)</a><br/>
+      <a href="./back01.html">back01 Lesson example cLick me to see :)</a>
+      <a href="./back02.html">back02 Lesson example cLick me to see :)</a>
+    </div>
   </body>
 </html>

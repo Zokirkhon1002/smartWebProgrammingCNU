@@ -1,0 +1,29 @@
+.box1 {
+  background-image: url("../../13-lesson/images/pink_1920.jpg");
+  min-height: 50vh;
+  /* background-position: center; */
+  background-size: cover;
+  display: grid;
+  place-content: center;
+}
+.box1 a {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(250, 134, 240);
+  text-shadow: 0 0 3px #3f5efb4c;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+.box1 a:hover {
+  text-shadow: unset;
+  box-shadow: 0 0 15px #3f5efbaf;
+}
+
+.box2 {
+  background-color: #3f5efb;
+  background: linear-gradient(90deg, #fc466b 0%, #3f5bfb 100%);
+  min-height: 50vh;
+}

@@ -1,0 +1,24 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  background: url("../images/road_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container div {
+  max-width: min(40%, 450px);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 216, 29, 1) 50%,
+    rgba(252, 69, 69, 1) 100%
+  );
+  padding: 2rem;
+  border-radius: 1rem;
+}
