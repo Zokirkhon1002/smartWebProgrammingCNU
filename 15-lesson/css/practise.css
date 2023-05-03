@@ -1,0 +1,27 @@
+.first {
+  height: 65vh;
+  background-image: url("../../6-lesson/images/bird-1045954_640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.second {
+  height: 35vh;
+  background: #f6ffdf;
+}
+
+.third {
+  position: relative;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    45deg,
+    #f8ff00 0%,
+    #3ad59f 45%,
+    rgb(209, 114, 221) 100%
+  );
+  width: 90%;
+  top: -45vh;
+  margin: 0 auto;
+  height: 55vh;
+  border-radius: 50px;
+}
