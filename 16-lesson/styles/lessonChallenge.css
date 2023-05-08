@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header,
+footer {
+  height: 7vh;
+  background: #f355f5;
+}
+figure {
+  flex-grow: 4;
+  background: #146c94;
+  background-image: url("../../13-lesson/images/pink_1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+article {
+  width: 16vw;
+  cursor: pointer;
+  height: 20vh;
+  background: #fdd5ff;
+  border-radius: 5px;
+  transition: all 0.23s ease-in-out;
+}
+article:hover {
+  transform: scale(1.1);
+}

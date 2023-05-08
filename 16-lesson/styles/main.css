@@ -1,0 +1,75 @@
+/* CONTAINERS FOR JUSTIFY_CONTENT START */
+.container {
+  display: flex;
+  gap: 2px;
+}
+.c1 {
+  justify-content: flex-start;
+}
+.c2 {
+  justify-content: center;
+}
+.c3 {
+  justify-content: flex-end;
+}
+.c4 {
+  justify-content: space-between;
+}
+.c5 {
+  justify-content: space-around;
+}
+.c6 {
+  justify-content: space-evenly;
+}
+.c7 {
+  justify-content: baseline;
+}
+
+/* CONTAINERS FOR JUSTIFY_CONTENT END */
+/* FLEX WRAP START*/
+.cc-2 {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* FLEX WRAP END*/
+
+/* ITEMS COLORS START */
+.item {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  display: grid;
+  place-content: center;
+}
+.item01 {
+  background: crimson;
+}
+.item02 {
+  background: rebeccapurple;
+}
+.item03 {
+  background: green;
+}
+.item04 {
+  background: salmon;
+}
+.item05 {
+  background: tan;
+}
+.item06 {
+  background: violet;
+}
+.item07 {
+  background: dodgerblue;
+}
+.item08 {
+  background: lightblue;
+}
+.item09 {
+  background: blue;
+}
+.item10 {
+  background: brown;
+}
+
+/* ITEMS COLORS END */
