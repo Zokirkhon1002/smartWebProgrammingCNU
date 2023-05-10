@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kotibkhonov Zokirkhon" />
+    <link rel="stylesheet" href="./styles/challenge.css" />
+    <title>Challenge</title>
+    <style>
+      a {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="./index.html">Back to main file</a>
+      <h1>Challenge</h1>
+    </div>
+    <div class="wrap">
+      <form action="#" class="form" enctype="multipart/form-data">
+        <p class="title">게시판 글쓰기</p>
+        <div class="inputbox">
+          <label for="mtitle">제목: </label>
+          <input
+            type="text"
+            id="mtitle"
+            name="mtitle"
+            placeholder="제목 입력"
+            autofocus
+            required
+          />
+          <label for="content">내용: </label>
+          <textarea
+            name="content"
+            id="content"
+            cols="30"
+            rows="10"
+            placeholder="내용 입력"
+          ></textarea>
+          <label for="mfile">자류 첨부: </label>
+          <input type="file" name="mfile" id="mfile" multiple />
+          <label for="writer">작성자: </label>
+          <input
+            type="text"
+            id="writer"
+            name="writer"
+            placeholder="작성자"
+            required
+          />
+          <div class="btn_box">
+            <button type="submit">등록</button>
+            <button type="reset">초기화</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

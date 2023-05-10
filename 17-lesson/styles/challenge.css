@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.wrap {
+  width: 60vw;
+  background: rgb(226, 231, 183);
+  line-height: 1.5;
+  padding: 30px;
+  border-radius: 20px;
+}
+.inputbox {
+  margin-top: 20px;
+}
+.title {
+  font-weight: 800;
+}
+.inputbox label {
+  display: block;
+}
+.inputbox input {
+  margin: 5px 0;
+  height: 30px;
+  width: 50vw;
+}
+.inputbox :is(input, textarea) {
+  outline: none;
+  padding: 5px;
+  color: rgb(123, 127, 90);
+}
+input::placeholder,
+textarea::placeholder {
+  color: rgb(98, 101, 72);
+}
+.inputbox textarea {
+  height: 30vh;
+  width: 50vw;
+  margin: 5px 0;
+}
+.btn_box {
+  text-align: center;
+}
+.btn_box button {
+  cursor: pointer;
+  padding: 8px 16px;
+  font-weight: 800;
+  background: #fff;
+  color: rgb(123, 127, 90);
+  transition: all 0.11s ease-in-out;
+  border-radius: 2px;
+}
+.btn_box button:hover {
+  opacity: 0.7;
+}
+
+#mfile {
+  margin: 10px 0 20px 0;
+}

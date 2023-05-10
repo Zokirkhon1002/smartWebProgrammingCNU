@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kotibkhonov Zokirkhon" />
+    <title>Input type file</title>
+    <style>
+      a {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="./index.html">Back to main file</a>
+    <h1>Input type file</h1>
+    <textarea
+      name="comment"
+      id="comment"
+      cols="70"
+      rows="15"
+      placeholder="write your opinion"
+    ></textarea>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>첨부 파일: 1개</legend>
+        <label for="mfile">첨부 파일: </label>
+        <p>
+          <input type="file" id="mfile" />
+        </p>
+        <input type="submit" /> <input type="reset" />
+      </fieldset>
+    </form>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>첨부 파일: 여러개</legend>
+        <label for="govfile">첨부 파일: </label>
+        <p>
+          <input type="file" id="govfile" multiple />
+        </p>
+        <input type="submit" /> <input type="reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>
