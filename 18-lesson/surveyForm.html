@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kotibkhonov Zokirkhon" />
+    <link rel="stylesheet" href="./styles/surveyForm.css" />
+    <title>Survey Form</title>
+    <style>
+      a {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="./index.html">Back to main file</a>
+    <div class="container">
+      <form
+        action="#"
+        class="survey__form"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <h2>Survey Form</h2>
+        <p>Thank you for taking time to give us feedback</p>
+        <div class="wrap">
+          <label class="survey__label" for="date"> Purchase Order Date: </label
+          >
+          <input
+            type="date"
+            name="date"
+            id="date"
+            class="survey__input"
+            required
+          />
+        </div>
+        <div class="wrap">
+          <label for="email" class="survey__label">Email: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email"
+            required
+            class="survey__input"
+          />
+        </div>
+
+        <div class="wrap">
+          <label for="age" class="survey__label">Age: </label>
+          <input
+            type="number"
+            placeholder="age"
+            name="age"
+            id="age"
+            required
+            class="survey__input"
+          />
+        </div>
+        <div class="wrap">
+          <label for="occupation" class="survey__label"
+            >Choose a role that best describes you:
+          </label>
+          <br />
+          <select name="occupation" id="occupation" class="survey__input">
+            <option selected disabled>Select your role</option>
+            <option value="student">Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="part-time-job">Part Time Job</option>
+            <option value="prefer-to-not-say">Prefer To Not Say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="rating" class="survey__label"
+            >Would you recommend our product to a friend?</label
+          >
+          <div class="radio__wrap">
+            <input type="radio" name="rating" id="rating" value="Never" /><span
+              >Never</span
+            >
+            <input type="radio" name="rating" id="rating" value="Maybe" /><span
+              >Maybe</span
+            >
+            <input type="radio" name="rating" id="rating" value="Likely" /><span
+              >Likely</span
+            >
+            <input
+              type="radio"
+              name="rating"
+              id="rating"
+              value="Definitely"
+            /><span>Definitely</span>
+          </div>
+        </div>
+        <div>
+          <label for="liked" class="survey__label"
+            >Select things that you liked about our product</label
+          >
+          <br />
+          <div class="radio__wrap">
+            <input type="checkbox" name="liked" id="liked" value="UI" /><span
+              >UI</span
+            >
+            <input
+              type="checkbox"
+              name="liked"
+              id="liked"
+              value="Features"
+            /><span>Features</span>
+            <input
+              type="checkbox"
+              name="liked"
+              id="liked"
+              value="Service"
+            /><span>Service</span>
+            <input
+              type="checkbox"
+              name="liked"
+              id="liked"
+              value="Simpleness"
+            /><span>Simpleness</span>
+          </div>
+        </div>
+        <div class="textarea__wrap ">
+          <label for="comment"></label>
+          <textarea class="survey__textarea" name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" value="Submit" class="survey__btn" />
+      </form>
+    </div>
+  </body>
+</html>

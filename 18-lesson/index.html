@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kotibkhonov Zokirkhon" />
+    <title>18-lesson input types tags</title>
+    <style>
+      .next-lesson {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #f00;
+        padding: 1rem;
+        margin-top: 10rem;
+      }
+      .next-lesson a {
+        display: inline-block;
+        padding: 1rem;
+        color: #00f;
+        border-radius: 10px;
+      }
+      a {
+        border: 1px solid #00f;
+      }
+      .form_1 {
+        margin-bottom: 5rem;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Input tag, select tag</h1>
+
+    <form action="#" method="post" class="form_1" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Input tags</legend>
+        <ul>
+          <li>
+            <label for="firstName">Firstname: </label
+            ><input
+              type="text"
+              placeholder="firstname"
+              id="firstName"
+              required
+            />
+          </li>
+          <li>
+            <label for="lastName">Lastname: </label
+            ><input type="text" placeholder="lastName" id="lastName" required />
+          </li>
+          <li>
+            <label for="username">Username: </label
+            ><input
+              type="username"
+              placeholder="username"
+              id="username"
+              required
+            />
+          </li>
+          <li>
+            <label for="password">Password: </label
+            ><input
+              type="password"
+              placeholder="password"
+              id="password"
+              required
+            />
+          </li>
+          <li>
+            <label for="repeat_password">Repeat password: </label
+            ><input
+              type="password"
+              placeholder="repeat password"
+              id="repeat_password"
+              required
+            />
+          </li>
+          <li>
+            <label for="phoneNumber">Phone number: </label
+            ><input
+              type="number"
+              placeholder="phone number"
+              id="phoneNumber"
+              required
+            />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Input Dates</legend>
+        <ul>
+          <li>
+            <label for="date">Date: </label
+            ><input type="date" placeholder="date" id="date" required />
+          </li>
+          <li>
+            <label for="time">Time: </label
+            ><input type="time" placeholder="time" id="time" required />
+          </li>
+          <li>
+            <label for="week">Week: </label
+            ><input type="week" placeholder="week" id="week" required />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Input types</legend>
+        <ul>
+          <li>
+            <label for="button">button: </label
+            ><input
+              type="button"
+              placeholder="button"
+              id="button"
+              value="Click me"
+              required
+            />
+          </li>
+          <li>
+            <label for="checkbox">checkbox: </label
+            ><input
+              type="checkbox"
+              placeholder="checkbox"
+              id="checkbox"
+              required
+            />
+          </li>
+          <li>
+            <label for="color">color: </label
+            ><input type="color" placeholder="color" id="color" required />
+          </li>
+          <li>
+            <label for="email">email: </label
+            ><input type="email" placeholder="email" id="email" required />
+          </li>
+          <li>
+            <label for="file">file: </label
+            ><input type="file" placeholder="file" id="file" required />
+          </li>
+          <li>
+            <label for="file_multiple">file multiple: </label
+            ><input
+              type="file"
+              placeholder="file"
+              id="file_multiple"
+              required
+              multiple
+            />
+          </li>
+          <li>
+            <label for="hidden">hidden: </label
+            ><input type="hidden" placeholder="hidden" id="hidden" required />
+          </li>
+          <li>
+            <label for="image">image: </label
+            ><input type="image" placeholder="image" id="image" required />
+          </li>
+          <li>
+            <label for="month">month: </label
+            ><input type="month" placeholder="month" id="month" required />
+          </li>
+          <li>
+            <label for="radio">radio: </label
+            ><input type="radio" placeholder="radio" id="radio" required />
+          </li>
+          <li>
+            <label for="range">range: </label
+            ><input
+              type="range"
+              placeholder="range"
+              id="range"
+              required
+              min="0"
+              max="100"
+              value="90"
+              step="2"
+            />
+          </li>
+          <li>
+            <label for="search">search: </label
+            ><input type="search" placeholder="search" id="search" required />
+          </li>
+          <li>
+            <label for="tel">tel: </label
+            ><input type="tel" placeholder="tel" id="tel" required />
+          </li>
+          <li>
+            <label for="url">url: </label
+            ><input type="url" placeholder="url" id="url" required />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Select Option</legend>
+        <ul>
+          <li>
+            <label for="f_fruit">Favourite fruit:</label>
+            <select name="f_fruit" id="f_fruit">
+              <option value=""></option>
+              <option value="apple">apple</option>
+              <option value="peach">peach</option>
+              <option value="grape">grape</option>
+              <option
+                value="banana"
+                title="There is not in our store for now"
+                disabled
+              >
+                banana
+              </option>
+            </select>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Select Option multiple choice</legend>
+        <ul>
+          <li>
+            <label for="f_car">Favourite car:</label>
+            <select name="f_car" id="f_car" multiple size="2">
+              <option value="Mustang">Mustang</option>
+              <option value="Hyundai">Hyundai</option>
+              <option value="Kia">Kia</option>
+              <option value="BMW">BMW</option>
+              <option value="Opel">Opel</option>
+            </select>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Select Option group</legend>
+        <ul>
+          <li>
+            <label for="f_gadget">Favourite gadget:</label>
+            <select name="f_gadget" id="f_gadget" multiple>
+              <optgroup label="Samung Galaxy">
+                <option value="Note20 Ultra">Note20 Ultra</option>
+                <option value="S23">S23</option>
+                <option value="z-flip">z-flip</option>
+              </optgroup>
+              <optgroup label="Iphone 12">
+                <option value="12">12</option>
+                <option value="12 Pro">12 Pro</option>
+                <option value="12 Pro Max">12 Pro Max</option>
+              </optgroup>
+              <optgroup label="Iphone 13">
+                <option value="13">13</option>
+                <option value="13 Pro">13 Pro</option>
+                <option value="13 Pro Max">13 Pro Max</option>
+              </optgroup>
+              <optgroup label="Iphone 14">
+                <option value="14">14</option>
+                <option value="14 Pro">14 Pro</option>
+                <option value="14 Pro Max">14 Pro Max</option>
+              </optgroup>
+              <optgroup label="Redmi">
+                <option value="note 8">note 8</option>
+                <option value="note 9">note 9</option>
+                <option value="note 10">note 10</option>
+              </optgroup>
+            </select>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Input type radio</legend>
+        <label for="rating">Would you recommend our product to a Friend?</label>
+        <div class="radio__wrap">
+          <input type="radio" name="rating" id="rating" value="Never" /><span
+            >Never</span
+          >
+          <input type="radio" name="rating" id="rating" value="Maybe" /><span
+            >Maybe</span
+          >
+          <input type="radio" name="rating" id="rating" value="Likely" /><span
+            >Likely</span
+          >
+          <input
+            type="radio"
+            name="rating"
+            id="rating"
+            value="Definitely"
+          /><span>Definitely</span>
+        </div>
+      </fieldset>
+      <br />
+      <input type="submit" value="Submit" />
+      <input
+        type="reset"
+        placeholder="reset"
+        id="reset"
+        value="Reset"
+        required
+      />
+    </form>
+
+    <div class="next-lesson">
+      <h1 style="border: none; text-align: center">New html Files</h1>
+      <a href="./surveyForm.html">Survey Form Click me to see:)</a>
+      <!-- <a href="./vwExamples.html">vwExamples click me to see:)</a>
+      <a href="./166-page.html">166-page example cLick me to see :)</a>
+      <a href="./163-172-pages.html"
+        >163-172-pages example cLick me to see :)</a
+      > -->
+    </div>
+  </body>
+</html>

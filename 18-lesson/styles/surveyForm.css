@@ -1,0 +1,70 @@
+body {
+  background: rgb(191, 191, 191);
+}
+.container {
+  display: flex;
+  min-height: 95vh;
+  justify-content: center;
+  align-items: center;
+}
+.survey__form {
+  background: aliceblue;
+  width: 45%;
+  border-radius: 10px;
+  padding: 10px;
+  color: rgb(0, 89, 140);
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.radio__wrap {
+  background: lightblue;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+.survey__label {
+  font-weight: 600;
+}
+.textarea__wrap {
+  margin: 0;
+  width: 95%;
+}
+.survey__input::placeholder {
+  color: #fff;
+}
+.survey__input {
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  width: 50%;
+  background: rgb(46, 142, 174);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.survey__textarea {
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 0;
+  height: 100%;
+  resize: none;
+  padding: 10px;
+  color: #fff;
+  font-weight: 600;
+  background: rgb(0, 105, 165);
+  margin-bottom: 10px;
+}
+.survey__btn {
+  border: none;
+  font-size: 17px;
+  padding: 10px 20px;
+  background: rgb(0, 105, 165);
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.17s ease-in-out;
+}
