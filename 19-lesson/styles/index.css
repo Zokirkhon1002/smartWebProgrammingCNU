@@ -1,0 +1,70 @@
+.text-red {
+  color: red;
+  border: 1px solid #bcbcbc;
+  padding: 10px;
+  border-radius: 10px;
+}
+.text-red button {
+  color: inherit;
+  cursor: pointer;
+  border: 1px solid red;
+  padding: 10px 20px;
+  transition: all 0.16s ease-in-out;
+  font-weight: 600;
+  border-radius: 6px;
+}
+.text-red button:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: red;
+}
+
+.GI_container {
+  border: 1px solid #bcbcbc;
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+.GI_container h1 {
+  color: green;
+}
+.GI__items {
+  list-style: none;
+}
+.GI__item {
+  display: flex;
+  margin: 5px 0;
+}
+.GI__item span {
+  margin-right: 5px;
+  color: green;
+  font-size: 2rem;
+}
+.GI__input {
+  border: none;
+  outline: none;
+  background: #ededed;
+  border-radius: 5px;
+  color: green;
+  padding: 5px;
+}
+.GI__input::placeholder {
+  color: rgba(0, 128, 0, 0.688);
+}
+.GI__btn {
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px 0 10px 0;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.597);
+  color: green;
+}
+.GI__btn:hover {
+  border-radius: 0 10px 0 10px;
+  color: #fff;
+  background: green;
+}

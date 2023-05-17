@@ -32,6 +32,12 @@ body {
   margin: 0;
   width: 95%;
 }
+.textarea__wrap label {
+  display: block;
+  margin-bottom: 5px;
+  color: rgb(0, 89, 140);
+  font-weight: 600;
+}
 .survey__input::placeholder {
   color: #fff;
 }
