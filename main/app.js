@@ -98,6 +98,7 @@ let allPaths = [
     id: "19",
     name: "lesson(2023.05.17)",
     path: "./19-lesson/index.html",
+    homework: "./19-lesson/homework/index.html",
   },
 ];
 
@@ -112,11 +113,9 @@ window.addEventListener("load", () => {
       path.name
     }</a> <a target="_blank"  href="https://github.com/Zokirkhon1002/smartWebProgrammingCNU/tree/main/${
       path.path.split("/")[1]
-    }" style="text-decoration:underline;" title="${
-      path.name
-    }'s code on github'">[<i>code${idx + 1}</i>]</a>${
-      path?.absent ? "</del>" : ""
-    }
+    }" style="text-decoration:underline;" title="${path.name}'s code on github'">[<i>code${
+      idx + 1
+    }</i>]</a>${path?.absent ? "</del>" : ""}
           ${
             path?.homework
               ? `<br><ul><li><a href="/${

@@ -1,0 +1,125 @@
+:root {
+  /* || COLORS || */
+  --GREEN: green;
+  --GREEN2: rgba(50, 111, 50, 0.512);
+  --GREEN3: rgba(0, 128, 0, 0.536);
+  --GREEN4: rgba(4, 154, 17, 0.269);
+  --GREEN5: rgba(0, 128, 0, 0.688);
+  --GREEN6: rgba(0, 128, 0, 0.597);
+  --RED: red;
+  --RED2: rgba(255, 0, 0, 0.597);
+  --WHITESMOKE: #ededed;
+  --WHITE: #fff;
+}
+.GI_container {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin-bottom: 5rem;
+}
+.GI_container h1 {
+  color: var(--GREEN);
+  text-shadow: 1px 1px 5px var(--GREEN2);
+}
+.GI__form {
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 400px;
+  box-shadow: 0 0 10px var(--GREEN3);
+}
+.GI__item {
+  display: flex;
+  margin: 5px 0;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.GI__item span {
+  margin-right: 5px;
+  color: var(--GREEN);
+  font-size: 1.5rem;
+}
+.GI__input,
+.GI__select,
+.GI__textarea {
+  border: none;
+  outline: none;
+  font: inherit;
+  background: var(--WHITESMOKE);
+  border-radius: 5px;
+  color: var(--GREEN);
+  padding: 0 5px;
+  height: 40px;
+  width: 100%;
+  margin: 5px 0;
+  box-shadow: 0 0 5px var(--GREEN4);
+}
+.GI__textarea {
+  height: auto;
+}
+.GI__input::placeholder,
+.GI__textarea::placeholder {
+  color: var(--GREEN5);
+}
+.GI__input:focus,
+.GI__input:focus-visible {
+  animation-name: minMaxScaleForInput;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+}
+.GI__btns {
+  border-top: 1px solid var(--GREEN);
+  margin-top: 1rem;
+  padding: 1rem 0 10px 0;
+}
+.GI__btn {
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px 0 10px 0;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  background: var(--WHITE);
+  box-shadow: 0 0 10px var(--GREEN6);
+  color: var(--GREEN);
+}
+.GI__btn:hover {
+  animation-name: minMaxScale;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+}
+.GI__cancel {
+  border-radius: 0 10px 0 10px;
+  margin-left: 5px;
+  box-shadow: 0 0 10px var(--RED2);
+  color: var(--RED);
+}
+.GI__cancel:hover {
+  animation-name: minMaxScale;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes minMaxScale {
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes minMaxScaleForInput {
+  50% {
+    transform: translateX(-15px) scale(1.1);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+.GI__input[type="number"]::-webkit-inner-spin-button,
+.GI__input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
