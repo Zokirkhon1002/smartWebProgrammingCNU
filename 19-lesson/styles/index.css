@@ -1,6 +1,6 @@
 .text-red {
   color: red;
-  border: 1px solid #bcbcbc;
+  border: 1px solid red;
   padding: 10px;
   border-radius: 10px;
 }
@@ -20,16 +20,19 @@
 }
 
 .GI_container {
-  border: 1px solid #bcbcbc;
   margin: 10px 0;
-  border-radius: 10px;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .GI_container h1 {
   color: green;
 }
 .GI__items {
-  list-style: none;
+  border: 1px solid green;
+  width: 50%;
+  border-radius: 10px;
+  padding: 10px;
 }
 .GI__item {
   display: flex;
@@ -43,13 +46,22 @@
 .GI__input {
   border: none;
   outline: none;
+  font: inherit;
   background: #ededed;
   border-radius: 5px;
   color: green;
-  padding: 5px;
+  padding: 0 5px;
+  height: 40px;
+  width: 100%;
+  margin: 5px 0;
 }
 .GI__input::placeholder {
   color: rgba(0, 128, 0, 0.688);
+}
+.GI__btns {
+  border-top: 1px solid green;
+  margin-top: 1rem;
+  padding: 0 10px;
 }
 .GI__btn {
   margin-top: 10px;
@@ -64,7 +76,21 @@
   color: green;
 }
 .GI__btn:hover {
-  border-radius: 0 10px 0 10px;
   color: #fff;
   background: green;
+}
+.GI__cancel {
+  border-radius: 0 10px 0 10px;
+  margin-left: 5px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.597);
+  color: red;
+}
+.GI__cancel:hover {
+  color: #fff;
+  background: red;
+}
+.GI__item input[type="number"]::-webkit-inner-spin-button,
+.GI__item input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
