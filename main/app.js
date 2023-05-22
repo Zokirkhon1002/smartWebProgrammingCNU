@@ -100,6 +100,11 @@ let allPaths = [
     path: "./19-lesson/index.html",
     homework: "./19-lesson/homework/index.html",
   },
+  {
+    id: "20",
+    name: "lesson(2023.05.22)",
+    path: "./20-lesson/index.html",
+  },
 ];
 
 window.addEventListener("load", () => {

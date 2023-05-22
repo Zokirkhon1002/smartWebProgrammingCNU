@@ -1,0 +1,11 @@
+/* ~ => for all siblings */
+.container1 {
+  margin-bottom: 5rem;
+}
+.container1 :is(h3 ~ p) {
+  background: green;
+}
+/* + => next sibling */
+.container1 :is(h4 + p) {
+  color: red;
+}

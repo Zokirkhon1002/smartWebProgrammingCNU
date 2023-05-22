@@ -25,8 +25,8 @@
 }
 .GI__form {
   border-radius: 10px;
-  padding: 10px;
-  max-width: 400px;
+  padding: 15px;
+  width: 500px;
   box-shadow: 0 0 10px var(--GREEN3);
 }
 .GI__item {
@@ -36,7 +36,7 @@
   font-size: 1.2rem;
 }
 .GI__item span {
-  margin-right: 5px;
+  margin-right: 10px;
   color: var(--GREEN);
   font-size: 1.5rem;
 }
@@ -101,7 +101,9 @@
   animation-duration: 0.4s;
   animation-timing-function: ease-in-out;
 }
-
+.GI__privacy {
+  font-size: 13px !important;
+}
 @keyframes minMaxScale {
   50% {
     transform: scale(1.2);
