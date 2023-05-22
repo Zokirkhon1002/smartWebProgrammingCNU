@@ -12,13 +12,14 @@
     />
     <link rel="stylesheet" href="./css/test001.css" />
     <style>
-      a {
+      .back__btn:any-link {
         color: blue;
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
-    <a href="./index.html">Back to main file</a>
+    <a class="back__btn" href="./index.html">Back to main file</a>
     <h1>속성선택자 플렉스박스 실습</h1>
     <div class="main">
       <section class="container1">
@@ -59,6 +60,7 @@
               src="./imgs/lock_FILL0_wght400_GRAD0_opsz48.svg"
             /><input class="c1__input2" type="password" />
           </li>
+          <button>Submit</button>
         </ul>
       </section>
       <section class="container1 container2">
@@ -84,7 +86,20 @@
             <span class="material-symbols-outlined"> lock </span>
             <input class="c1__input2" type="password" />
           </li>
+          <button>Submit</button>
         </ul>
+      </section>
+      <section class="container3">
+        <h3>file-selector-button 선택자 이용</h3>
+        <div>
+          <label for="files" class="btn_label">Select Image</label>
+          <input
+            id="files"
+            name="files"
+            style="visibility: hidden"
+            type="file"
+          />
+        </div>
       </section>
     </div>
   </body>

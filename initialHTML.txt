@@ -7,13 +7,13 @@
     <meta name="author" content="Kotibkhonov Zokirkhon" />
     <title>External Css Examples</title>
     <style>
-      a {
+      .back__btn:any-link {
         color: blue;
       }
     </style>
   </head>
   <body>
-    <a href="./index.html">Back to main file</a>
+    <a class="back__btn" href="./index.html">Back to main file</a>
     <h1>External Css Examples</h1>
   </body>
 </html>

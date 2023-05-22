@@ -1,0 +1,41 @@
+/* WRAP 1 */
+.wrap li {
+  width: 150px;
+  height: 20px;
+  list-style: none;
+}
+
+.wrap li:nth-child(2n) {
+  background: rebeccapurple;
+}
+
+.wrap li:nth-child(2n + 1) {
+  background: green;
+}
+
+.wrap li:first-child {
+  color: red;
+}
+.wrap li:last-child {
+  color: yellow;
+}
+/* WRAP 2 */
+.wrap2 p:nth-of-type(2) {
+  background: red;
+}
+.wrap2 a:nth-last-of-type(2) {
+  background: blue;
+  color: #fff;
+  display: block;
+}
+.wrap2 div:first-of-type {
+  background: green;
+}
+.wrap2 div:last-of-type {
+  background: yellow;
+}
+
+/* CONTAINER 3 */
+.btn_label {
+  color: green;
+}
