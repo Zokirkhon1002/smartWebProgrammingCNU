@@ -42,7 +42,7 @@
         color: #00f;
         border-radius: 10px;
       }
-      a {
+      .back__btn:any-link {
         border: 1px solid #00f;
       }
     </style>
@@ -52,10 +52,10 @@
 
     <!-- <div class="next-lesson">
       <h1 style="border: none; text-align: center">New html Files</h1>
-      <a href="./remExamples.html">units Rem examples Click me to see:)</a>
-      <a href="./vwExamples.html">vwExamples click me to see:)</a>
-      <a href="./166-page.html">166-page example cLick me to see :)</a>
-      <a href="./163-172-pages.html"
+      <a class="back__btn" href="./remExamples.html">units Rem examples Click me to see:)</a>
+      <a class="back__btn" href="./vwExamples.html">vwExamples click me to see:)</a>
+      <a class="back__btn" href="./166-page.html">166-page example cLick me to see :)</a>
+      <a class="back__btn" href="./163-172-pages.html"
         >163-172-pages example cLick me to see :)</a
       >
     </div> -->

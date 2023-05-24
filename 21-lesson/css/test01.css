@@ -1,0 +1,77 @@
+.wrap {
+  border: 2px solid blue;
+  width: 50vw;
+  padding: 2rem;
+  margin: 2px;
+}
+.wrap:last-of-type {
+    margin-bottom: 5rem;
+}
+.wrap1__menu__item a:link {
+  color: red;
+}
+.wrap1__menu__item a:visited {
+  color: green;
+}
+.wrap1__menu__item a:hover {
+  color: gray;
+}
+.wrap1__menu__item a:active {
+  color: purple;
+}
+.wrap2__form__innerWrap {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  gap: 5px;
+}
+.wrap2__form__innerWrap__label::before {
+  content: "*";
+  margin-right: 10px;
+  vertical-align: middle;
+  color: red;
+}
+.wrap2__form__innerWrap__input {
+  border: none;
+  outline: none;
+  background: #eee;
+  padding: 5px;
+  border-radius: 6px;
+}
+.submit {
+  position: relative;
+  transition: all 0.17s ease-in-out;
+}
+.submit:hover::after {
+  content: "전송 버튼을 눌러 로그인하세요.";
+  position: absolute;
+  top: 25px;
+  width: 200px;
+  left: -10px;
+  background: rgb(218, 255, 192);
+  border-radius: 6px;
+}
+.reset {
+  position: relative;
+}
+.reset:hover::after {
+  content: "Do you want to reset form?";
+  position: absolute;
+  top: 25px;
+  width: 180px;
+  left: -10px;
+  background: pink;
+  border-radius: 6px;
+}
+.wrap3__p:nth-of-type(1)::first-letter {
+  font-size: 3rem;
+  color: red;
+}
+.wrap3__p:nth-of-type(2)::first-line {
+  background-color: yellow;
+  font-size: 25px;
+}
+.wrap3__p:nth-of-type(3)::selection {
+    background-color: green;
+    color: #fff;
+}

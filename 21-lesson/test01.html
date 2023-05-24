@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kotibkhonov Zokirkhon" />
+    <link rel="stylesheet" href="./css/test01.css" />
+    <title>가상요소 실습</title>
+    <style>
+      .back__btn:any-link {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="back__btn" href="./index.html">Back to main file</a>
+    <h1>가상요소 실습</h1>
+
+    <section class="wrap wrap1">
+      <h3>link, visited, hover, active 테스팅</h3>
+      <ul class="wrap1__menu">
+        <li class="wrap1__menu__item">
+          <a href="https://www.jnu.ac.kr">Chonnam National University</a>
+        </li>
+        <li class="wrap1__menu__item"><a href="#">Harvard University</a></li>
+        <li class="wrap1__menu__item"><a href="#">Webster University</a></li>
+        <li class="wrap1__menu__item"><a href="#">Cambridge University</a></li>
+      </ul>
+    </section>
+    <section class="wrap wrap2">
+      <h3>before, after 예제</h3>
+      <form action="#" class="wrap2__form" method="post">
+        <div class="wrap2__form__innerWrap">
+          <label for="username" class="wrap2__form__innerWrap__label"
+            >username:</label
+          >
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="username"
+            class="wrap2__form__innerWrap__input"
+            required
+          />
+        </div>
+        <div class="wrap2__form__innerWrap">
+          <label for="password" class="wrap2__form__innerWrap__label"
+            >password:</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="password"
+            class="wrap2__form__innerWrap__input"
+            required
+          />
+        </div>
+        <div class="wrap2__form__innerWrap__btns">
+          <button type="submit" class="btn submit">Submit</button>
+          <button type="reset" class="btn reset">Reset</button>
+        </div>
+      </form>
+    </section>
+    <section class="wrap wrap3">
+      <h3>::first-letter</h3>
+      <p class="wrap3__p">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repudiandae
+        temporibus, dolorum eos consequatur dolore, consequuntur similique
+        cumque placeat aut veritatis ipsum eius reiciendis iure voluptatum
+        laboriosam minus ratione sed.
+      </p>
+      <h3>::first-line</h3>
+
+      <p class="wrap3__p">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere commodi
+        laudantium labore, suscipit ea nulla consectetur, rem architecto ipsum
+        amet voluptate molestias exercitationem praesentium voluptatem accusamus
+        distinctio magnam excepturi tempore?
+      </p>
+      <h3>::selection</h3>
+
+      <p class="wrap3__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illum, perferendis doloremque, molestias harum explicabo reiciendis nesciunt dolore tempora rerum, sunt voluptates nulla deserunt fugit odio eum magnam ipsum. Totam.</p>
+    </section>
+  </body>
+</html>
