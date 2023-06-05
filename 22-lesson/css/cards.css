@@ -9,12 +9,17 @@
   justify-content: space-evenly;
 }
 .box {
+  cursor: pointer;
   margin-top: 20px;
   width: 400px;
   min-height: 500px;
   background-color: rgb(239, 228, 234);
   border-radius: 6px;
   box-shadow: 1px 1px 10px #a7a7a7;
+  transition: all 0.2s ease-in-out;
+}
+.box:hover {
+  box-shadow: 0 0 10px rgb(231, 26, 187);
 }
 .banner_img {
   background-image: url("../../13-lesson/images/pink_1920.jpg");

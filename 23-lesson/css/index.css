@@ -1,0 +1,65 @@
+img {
+  max-width: 100%;
+}
+.wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap__figure {
+  min-width: 50vw;
+  text-align: center;
+  border: 6px solid #000;
+  border-radius: 10px;
+}
+.wrap__figcaption {
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  background: bisque;
+  font-size: 20px;
+}
+.wrap__container {
+  animation: hongslider 10s infinite;
+  height: 500px;
+}
+
+@keyframes hongslider {
+  0% {
+    background: url("../../6-lesson/images/bird-1045954_640.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  20% {
+    background: url("../../6-lesson/images/bird-2295431_640.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  40% {
+    background: url("../../6-lesson/images/bird-9950_640.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  60% {
+    background: url("../../13-lesson/images/coffee_1920.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  80% {
+    background: url("../../13-lesson/images/pink_1920.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background: url("../../14-lesson/images/road_1920.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
