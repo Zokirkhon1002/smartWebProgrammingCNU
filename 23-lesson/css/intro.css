@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --yellow-light: #ffc107;
+}
+.intro {
+  background: url(../../14-lesson/images/road_1920.jpg);
+  height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+.intro h1 {
+  position: absolute;
+  min-width: 300px;
+  font-size: 2.3rem;
+  left: 400px;
+  top: 60px;
+  animation: intro_slider 5s ease-in-out 3;
+}
+
+@keyframes intro_slider {
+  10% {
+    left: -400px;
+  }
+  50% {
+    color: var(--yellow-light);
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(1.3);
+  }
+  80% {
+    left: 400px;
+    transform: scale(1.3);
+  }
+  90% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

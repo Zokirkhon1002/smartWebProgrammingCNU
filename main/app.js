@@ -119,6 +119,7 @@ let allPaths = [
     id: "23",
     name: "lesson(2023.06.05)",
     path: "./23-lesson/index.html",
+    homework: "./23-lesson/homework/index.html",
   },
 ];
 
