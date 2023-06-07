@@ -1,8 +1,395 @@
+:root {
+  --primary-color: #27374d;
+  --purple: #651fff;
+  --purple-light: rgb(231, 26, 187);
+  --lightblue: rgb(137, 137, 175);
+  --yellow-light: #ffc107;
+  --header-bg-color: #b0bec5;
+  --primary-width: 80vw;
+  --white: #fff;
+  --gray: #eee;
+  --bisque-light: rgb(248, 238, 225);
+  --gray-light: #b0bec5;
+  --gray-light2: rgb(239, 228, 234);
+  --gray-dark: #a7a7a7;
+  --gray-dark2: gray;
+  --black: #000;
+  --bisque: bisque;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 img {
   max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+a:any-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--gray);
+}
+
+header {
+  height: 10vh;
+  background: var(--header-bg-color);
+  display: flex;
+}
+.intro {
+  height: 30vh;
+}
+
+#home {
+  min-width: 300px;
+  color: var(--primary-color);
+}
+#home a {
+  transition: all 0.2s ease-in-out;
+}
+#home a:hover {
+  color: var(--purple);
+  opacity: 0.6;
+  text-shadow: 2px 2px 15px var(--white);
+}
+
+#header_nav {
+  display: flex;
+  justify-content: center;
+}
+#header_nav a {
+  margin: 0 20px;
+  padding: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+#header_nav a:hover {
+  color: var(--yellow-light);
+  border-bottom: 3px solid var(--purple);
+}
+
+header,
+footer,
+.intro,
+main {
+  flex: 1 100%;
+}
+main {
+  margin: 1rem;
+}
+
+.main_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header_inner {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: var(--primary-width);
+  justify-content: space-between;
+}
+
+.intro {
+  background: url(../../14-lesson/images/road_1920.jpg);
+  height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+  position: relative;
+}
+
+.intro h1 {
+  position: absolute;
+  min-width: 300px;
+  font-size: 2.3rem;
+  left: 400px;
+  top: 60px;
+  animation: intro_slider 5s ease-in-out 3;
+}
+@keyframes intro_slider {
+  10% {
+    left: -400px;
+  }
+  50% {
+    color: var(--purple-light);
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  80% {
+    left: 400px;
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.header_inner,
+.main_inner,
+.footer_inner {
+  max-width: var(--primary-width);
+  margin: 0 auto;
+}
+
+.box_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.box {
+  cursor: pointer;
+  margin-top: 20px;
+  width: 400px;
+  min-height: 500px;
+  background-color: var(--gray-light2);
+  border-radius: 6px;
+  box-shadow: 1px 1px 10px var(--gray-dark);
+  transition: all 0.2s ease-in-out;
+}
+.box:hover {
+  box-shadow: 0 0 10px var(--purple-light);
+  transform: scale(1.1);
+}
+.banner_img {
+  background-image: url("../../13-lesson/images/pink_1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+  border-radius: 6px 6px 0 0;
+}
+
+.inner__wrap {
+  text-align: center;
+  margin-top: -100px;
+}
+
+.profile_img {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  border: 5px solid var(--white);
+}
+
+.innerBox {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box2 {
+  padding: 10px;
+}
+.box2__h4 {
+  margin: 10px 5px 5px 5px;
+}
+.h4_2 {
+  margin-top: 20px;
+}
+
+.box2__li {
+  margin: 10px;
+}
+.box2__li :is(span, a) {
+  display: block;
+}
+.box2__li span:nth-child(1) {
+  font-weight: 600;
+  color: var(--purple);
+}
+.box2__li :is(a:any-link, span:nth-child(2)) {
+  color: var(--black);
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px dotted var(--gray-dark2);
+}
+
+.skills_box {
+  margin: 1rem;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 8px 0 var(--gray-light);
+}
+.skills_box li {
+  margin: 10px;
+  padding: 20px;
+  min-width: 200px;
+  flex: 1 0 200px;
+  display: flex;
+}
+.skills_box label {
+  margin-right: 20px;
+  width: 100px;
+}
+.skills_box input[type="range"] {
+  width: 100%;
+}
+@media all and (max-width: 500px) {
+  .skills_box li {
+    padding: 10px;
+  }
+}
+.activity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.activity h3 {
+  align-self: flex-start;
+  margin: 10px;
+  color: var(--primary-color);
+}
+.activity {
+  width: 98%;
+}
+.activity__ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+.activity__li {
+  border-radius: 10px;
+  flex-basis: calc(20% - 20px);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.activity__li figure {
+  cursor: pointer;
+  height: 20vh;
+  margin: 0;
+  padding: 0;
+  transition: all 0.13s ease-in-out;
+  border-radius: 10px;
+}
+.activity__li figure:hover img {
+  transform: scale(1.2);
+}
+.activity__li img {
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px solid var(--lightblue);
+}
+
+.activity__li figcaption {
+  position: relative;
+  height: 40px;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  background-color: var(--lightblue);
+  color: var(--white);
+  margin-top: 5px;
+}
+
+.wrap__figure {
+  width: 700px;
+  text-align: center;
+  border: 6px solid var(--black);
+  border-radius: 10px;
+}
+@media all and (max-width: 750px) {
+  .wrap__figure {
+    width: 100%;
+  }
+}
+.wrap__figcaption {
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  background: var(--bisque);
+  font-size: 20px;
+}
+.wrap__container {
+  animation: hongslider 10s infinite;
+  height: 500px;
+}
+@keyframes hongslider {
+  0% {
+    background: url("../../6-lesson/images/bird-1045954_640.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  20% {
+    background: url("../../6-lesson/images/bird-2295431_640.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  40% {
+    background: url("../../6-lesson/images/bird-9950_640.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  60% {
+    background: url("../../13-lesson/images/coffee_1920.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  80% {
+    background: url("../../13-lesson/images/pink_1920.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background: url("../../14-lesson/images/road_1920.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.arrow_up {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background: var(--gray);
+  border-radius: 50%;
+  box-shadow: 0 1px 5px 0 var(--primary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.arrow_up:hover {
+  background: var(--bisque-light);
 }
