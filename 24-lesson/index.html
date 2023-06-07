@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kotibkhonov Zokirkhon" />
+    <title>24-lesson</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+      .next-lesson {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #f00;
+        padding: 1rem;
+        margin-top: 10rem;
+      }
+      .next-lesson a {
+        display: inline-block;
+        padding: 1rem;
+        color: #00f;
+        border-radius: 10px;
+      }
+      .back__btn:any-link {
+        border: 1px solid #00f;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="skills" id="menu_skills">
+      <h3>Skilss</h3>
+      <ul class="skills_box">
+        <li>
+          <label for="html_css">HTML/CSS: </label
+          ><input type="range" id="html_css" min="0" max="100" value="90" inert />
+        </li>
+        <li>
+          <label for="javascript">Javascript: </label
+          ><input type="range" id="javascript" min="0" max="100" value="95" inert />
+        </li>
+
+        <li>
+          <label for="nodejs">Nodejs: </label
+          ><input type="range" id="nodejs" min="0" max="100" value="92" inert />
+        </li>
+        <li>
+          <label for="reactjs">ReactJS: </label
+          ><input type="range" id="reactjs" min="0" max="100" value="97" inert />
+        </li>
+        <li>
+          <label for="typescript">Typescript: </label
+          ><input type="range" id="typescript" min="0" max="100" value="80" inert />
+        </li>
+        <li>
+          <label for="python">Python: </label
+          ><input type="range" id="python" min="0" max="100" value="80" inert />
+        </li>
+      </ul>
+    </section>
+
+    <div class="next-lesson">
+      <h1 style="border: none; text-align: center">New html Files</h1>
+      <a class="back__btn" href="./layout.html">Layout Click me to see:)</a>
+      <!-- <a class="back__btn" href="./vwExamples.html">vwExamples click me to see:)</a>
+      <a class="back__btn" href="./166-page.html">166-page example cLick me to see :)</a>
+      <a class="back__btn" href="./163-172-pages.html"
+        >163-172-pages example cLick me to see :)</a
+      > -->
+    </div>
+  </body>
+</html>

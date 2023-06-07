@@ -1,0 +1,30 @@
+:root {
+  --gray-light: #b0bec5;
+}
+
+.skills_box {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 8px 0 var(--gray-light);
+}
+.skills_box li {
+  margin: 10px;
+  padding: 20px;
+  min-width: 200px;
+  flex: 1 0 200px;
+  display: flex;
+}
+.skills_box label {
+  margin-right: 20px;
+  width: 100px;
+}
+.skills_box input[type="range"] {
+  width: 100%;
+}
+@media all and (max-width: 500px) {
+  .skills_box li {
+    padding: 10px;
+  }
+}
