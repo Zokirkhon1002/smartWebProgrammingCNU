@@ -4,15 +4,338 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework</title>
+    <meta name="author" content="Kotibkhonov Zokirkhon" />
+    <title>Smart Portfolio</title>
+    <link rel="stylesheet" href="./css/layout.css" />
     <style>
-      img {
-        max-width: 100%;
+      .back__btn:any-link {
+        color: blue;
+        margin-bottom: 2rem;
+        position: absolute;
+        background: #fcfcfc88;
+        padding: 5px 10px;
+        border-radius: 10px;
       }
     </style>
   </head>
   <body>
-    <h1>Homework</h1>
-    <img src="./photo1686110787.jpeg" alt="homework" />
+    <a class="back__btn" href="../index.html">Back to main file</a>
+    <header>
+      <div class="header_inner" id="header_inner">
+        <h1 id="home">
+          <a href="#">☺Zokirkhon's portfolio</a>
+        </h1>
+        <nav id="header_nav">
+          <a href="#">Profile</a>
+          <a href="#">Skills</a>
+          <a href="#">Activity</a>
+        </nav>
+      </div>
+    </header>
+    <section class="intro">
+      <h1>
+        수산 <br />
+        해양 <br />
+        IT <br />
+        융복합 전공 공
+      </h1>
+    </section>
+    <main>
+      <section class="main_inner">
+        <section class="profile">
+          <h3>Profile</h3>
+          <div class="box_wrapper">
+            <div class="box box1">
+              <div class="banner_img"></div>
+              <div class="inner__wrap">
+                <img
+                  src="./images/coffee_1920.jpg"
+                  alt="Coffee"
+                  class="profile_img"
+                />
+              </div>
+              <div class="innerBox">
+                <h3>"Zokirkhon"</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+                  qui tenetur consequatur repellat sequi quibusdam nulla, ad
+                  corrupti? Consequatur hic, natus accusantium iusto veniam
+                  vero.
+                </p>
+              </div>
+            </div>
+            <div class="box box2">
+              <h4 class="box2__h4">Contact Me</h4>
+              <ul class="box2__ul">
+                <li class="box2__li">
+                  <span>Instagram</span>
+                  <a href="https://www.instagram.com/zokirkhon1002"
+                    >https://www.instagram.com/zokirkhon1002</a
+                  >
+                </li>
+                <li class="box2__li">
+                  <span>Email</span>
+                  <a href="mailto:zokirxonkotibxanov@gmail.com"
+                    >zokirxonkotibxanov@gmail.com</a
+                  >
+                </li>
+                <li class="box2__li">
+                  <span>Phone</span>
+                  <a href="tel+821080891816">010-8089-1816</a>
+                </li>
+              </ul>
+              <h4 class="box2__h4 h4_2">학력</h4>
+              <ul class="box2__ul">
+                <li class="box2__li">
+                  <span> 2018.09 </span>
+                  <span>
+                    The major of International Trade in Chonnam National
+                    University
+                  </span>
+                </li>
+                <li class="box2__li">
+                  <span> 2023.06 </span>
+                  <span>
+                    The major of International Trade in Chonnam National
+                    University
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="box box2">
+              <h4>자격 및 교육 사항</h4>
+              <ul class="box2__ul">
+                <li class="box2__li">
+                  <span>2018.09</span>
+                  <span>생물정보 통계 분석 교육 수료</span>
+                </li>
+                <li class="box2__li">
+                  <span>2019.09</span>
+                  <span>스쿠버다이빙 자격 취득</span>
+                </li>
+                <li class="box2__li">
+                  <span>2020.09</span>
+                  <span>수산물품질기사 자격 취득</span>
+                </li>
+                <li class="box2__li">
+                  <span>2021.09</span>
+                  <span>해양환경기사 자격 취득</span>
+                </li>
+                <li class="box2__li">
+                  <span>2022.09</span>
+                  <span>해양환경기사 자격 취득</span>
+                </li>
+                <li class="box2__li">
+                  <span>2023.06</span>
+                  <span>해양환경기사 자격 취득</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="skills" id="menu_skills">
+          <h3>Skilss</h3>
+          <ul class="skills_box">
+            <li>
+              <label for="html_css">HTML/CSS: </label
+              ><input
+                type="range"
+                id="html_css"
+                title="html_css"
+                min="0"
+                max="100"
+                value="90"
+                inert
+              />
+            </li>
+            <li>
+              <label for="javascript">Javascript: </label
+              ><input
+                type="range"
+                id="javascript"
+                title="javascript"
+                min="0"
+                max="100"
+                value="95"
+                inert
+              />
+            </li>
+
+            <li>
+              <label for="nodejs">Nodejs: </label
+              ><input
+                type="range"
+                id="nodejs"
+                title="nodejs"
+                min="0"
+                max="100"
+                value="92"
+                inert
+              />
+            </li>
+            <li>
+              <label for="reactjs">ReactJS: </label
+              ><input
+                type="range"
+                id="reactjs"
+                title="reactjs"
+                min="0"
+                max="100"
+                value="97"
+                inert
+              />
+            </li>
+            <li>
+              <label for="typescript">Typescript: </label
+              ><input
+                type="range"
+                id="typescript"
+                title="typescript"
+                min="0"
+                max="100"
+                value="80"
+                inert
+              />
+            </li>
+            <li>
+              <label for="python">Python: </label
+              ><input
+                type="range"
+                id="python"
+                title="python"
+                min="0"
+                max="100"
+                value="80"
+                inert
+              />
+            </li>
+          </ul>
+        </section>
+        <section class="activity">
+          <figure class="wrap__figure">
+            <h1>2023 Activity</h1>
+            <div class="wrap__container"></div>
+            <figcaption class="wrap__figcaption">Jnu Susan Inc.</figcaption>
+          </figure>
+        </section>
+        <section class="activity">
+          <h3>Activity 2</h3>
+          <ul class="activity__ul">
+            <li class="activity__li">
+              <figure>
+                <img
+                  src="https://cdn.pixabay.com/photo/2023/03/16/13/09/taxi-7856666_960_720.jpg"
+                  title="Download free HD stock image of Taxi City"
+                  alt="Free Taxi City photo and picture"
+                />
+              </figure>
+              <figcaption>2023.05.24 Field practice</figcaption>
+            </li>
+            <li class="activity__li">
+              <figure>
+                <img
+                  src="https://cdn.pixabay.com/photo/2016/11/13/12/52/kuala-lumpur-1820944_960_720.jpg"
+                  title="Download free HD stock image of Kuala Lumpur Petronas Twin Towers"
+                  alt="Free Kuala Lumpur Petronas Twin Towers photo and picture"
+                />
+              </figure>
+              <figcaption>2023.05.24 Field practice</figcaption>
+            </li>
+            <li class="activity__li">
+              <figure>
+                <img
+                  src="https://cdn.pixabay.com/photo/2013/03/02/02/41/alley-89197_960_720.jpg"
+                  title="Download free HD stock image of Alley Street"
+                  alt="Free Alley Street photo and picture"
+                />
+              </figure>
+              <figcaption>2023.05.24 Field practice</figcaption>
+            </li>
+            <li class="activity__li">
+              <figure>
+                <img
+                  src="https://cdn.pixabay.com/photo/2016/02/13/12/26/aurora-1197753_960_720.jpg"
+                  title="Download free HD stock image of Aurora Northern Lights"
+                  alt="Free Aurora Northern Lights photo and picture"
+                />
+              </figure>
+              <figcaption>2023.05.24 Field practice</figcaption>
+            </li>
+            <li class="activity__li">
+              <figure>
+                <img
+                  src="https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_960_720.jpg"
+                  title="Download free HD stock image of Flowers Meadow"
+                  alt="Free Flowers Meadow photo and picture"
+                />
+              </figure>
+              <figcaption>2023.05.24 Field practice</figcaption>
+            </li>
+            <li class="activity__li">
+              <figure>
+                <img
+                  src="https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175_960_720.jpg"
+                  title="Download free HD stock image of Pink Cherry Blossoms"
+                  alt="Free Pink Cherry Blossoms photo and picture"
+                />
+              </figure>
+              <figcaption>2023.05.24 Field practice</figcaption>
+            </li>
+            <li class="activity__li">
+              <figure>
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/04/23/22/01/mountains-736886_960_720.jpg"
+                  title="Download free HD stock image of Mountains Alps"
+                  alt="Free Mountains Alps photo and picture"
+                />
+              </figure>
+              <figcaption>2023.05.24 Field practice</figcaption>
+            </li>
+            <li class="activity__li">
+              <figure>
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
+                  title="Download free HD stock image of Bird Fluttering"
+                  alt="Free Bird Fluttering photo and picture"
+                />
+              </figure>
+              <figcaption>2023.05.24 Field practice</figcaption>
+            </li>
+            <li class="activity__li">
+              <figure>
+                <img
+                  src="https://cdn.pixabay.com/photo/2010/12/13/10/05/berries-2277_960_720.jpg"
+                  title="Download free HD stock image of Berries Fruits"
+                  alt="Free Berries Fruits photo and picture"
+                />
+              </figure>
+              <figcaption>2023.05.24 Field practice</figcaption>
+            </li>
+            <li class="activity__li">
+              <figure>
+                <img
+                  src="https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971552_960_720.jpg"
+                  title="Download free HD stock image of Cake Piece"
+                  alt="Free Cake Piece photo and picture"
+                />
+              </figure>
+              <figcaption>2023.05.24 Field practice</figcaption>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <section class="footer_inner">
+        &copy; Zokirkhon's portfolio @<span id="footerDate">2023</span>
+      </section>
+    </footer>
+    <a href="#home" class="arrow_up"
+      ><img
+        src="./images/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg"
+        alt="arrow up icon"
+    /></a>
+
+    <script src="./js/layout.js"></script>
   </body>
 </html>
