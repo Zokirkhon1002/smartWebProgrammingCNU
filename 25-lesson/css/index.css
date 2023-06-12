@@ -1,0 +1,25 @@
+@media all and (max-width: 468px) {
+  body {
+    background-color: rgb(245, 150, 27);
+  }
+}
+@media all and (min-width: 469px) and (max-width: 780px) {
+  body {
+    background-color: aqua;
+  }
+}
+@media all and (min-width: 781px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+@media print {
+  h3 {
+    font-size: 78px;
+    font-style: oblique;
+  }
+  h3:before {
+    content: "Hello, this is only for printing! ";
+  }
+}

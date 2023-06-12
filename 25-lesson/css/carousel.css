@@ -1,0 +1,7 @@
+.c-item {
+    height: 50vh;
+}
+.c-img {
+    height: 100%;
+    object-fit: cover;
+}
