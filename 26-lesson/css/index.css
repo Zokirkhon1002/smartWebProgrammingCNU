@@ -1,0 +1,74 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --primary-color: #27374d;
+  --purple: #651fff;
+  --purple-light: rgb(231, 26, 187);
+  --lightblue: rgb(137, 137, 175);
+  --yellow-light: #ffc107;
+  --header-bg-color: #b0bec5;
+  --primary-width: 80%;
+  --white: #fff;
+  --gray: #eee;
+  --bisque-light: rgb(248, 238, 225);
+  --gray-light: #b0bec5;
+  --gray-light2: rgb(239, 228, 234);
+  --gray-dark: #a7a7a7;
+  --gray-dark2: gray;
+  --black: #000;
+  --bisque: bisque;
+}
+
+/* HTML */
+html {
+  scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+/* GENERAL */
+header,
+main,
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.header_inner,
+.main_inner,
+.footer_inner {
+  max-width: var(--primary-width);
+}
+
+/* HEADER */
+header {
+  min-height: 10vh;
+  background: var(--gray-light);
+}
+
+/* MAIN */
+main {
+  background: var(--purple);
+  flex-grow: 1;
+}
+
+/* FOOTER */
+footer {
+  min-height: 10vh;
+  background: var(--gray-light);
+}
